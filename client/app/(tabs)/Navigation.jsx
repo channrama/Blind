@@ -2,95 +2,120 @@ import { useState, useEffect, useRef } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, Platform } from 'react-native';
 import WebView from 'react-native-webview';
 import * as Speech from 'expo-speech';
+import { Camera } from 'expo-camera';
 
 export default function Navigation() {
   const [isConnected, setIsConnected] = useState(false);
   const [error, setError] = useState(null);
-  const [isSpeaking, setIsSpeaking] = useState(false);
   const [isCameraLoaded, setIsCameraLoaded] = useState(false);
+  const [lastSpokenTime, setLastSpokenTime] = useState(0);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const [currentLabel, setCurrentLabel] = useState('');
+  const [isTTSEnabled, setIsTTSEnabled] = useState(true);
+  const [hasCameraPermission, setHasCameraPermission] = useState(null);
+  const [voiceSettings, setVoiceSettings] = useState({
+    rate: 1.0,
+    pitch: 1.0,
+    language: 'en-US',
+    volume: 1.0
+  });
+
   const hasSpokenRef = useRef(false);
   const lastSpokenLabelRef = useRef('');
   const labelCheckIntervalRef = useRef(null);
-  
-  // Your computer's IP address
-  const SERVER_URL = 'http://192.168.245.67:5000';
+  const speakTimeoutRef = useRef(null);
+  const speechQueueRef = useRef([]);
+  const connectionCheckIntervalRef = useRef(null);
+  const SERVER_URL = 'http://10.0.2.172:5000';
+  const processNextInQueue = async () => {
+    if (speechQueueRef.current.length > 0 && !isSpeaking) {
+      const nextText = speechQueueRef.current.shift();
+      await speakText(nextText);
+    }
+  };
 
-  useEffect(() => {
-    checkServerConnection();
-    const interval = setInterval(checkServerConnection, 5000);
-    return () => {
-      clearInterval(interval);
-      if (labelCheckIntervalRef.current) {
-        clearInterval(labelCheckIntervalRef.current);
-      }
-      if (isSpeaking) {
-        Speech.stop();
-      }
-    };
-  }, []);
-
-  const speak = async (text) => {
+  const speakText = async (text) => {
     try {
-      if (isSpeaking) {
-        await Speech.stop();
+      if (!isTTSEnabled || !text) {
+        console.log('TTS disabled or empty text');
+        return;
       }
-      console.log('Speaking:', text); // Debug log
+
+      const currentTime = Date.now();
+      if (text === lastSpokenLabelRef.current && currentTime - lastSpokenTime < 3000) {
+        console.log('Skipping repeated text:', text);
+        return;
+      }
+
+      console.log('Attempting to speak:', text);
+      
+      // Stop any ongoing speech
+      try {
+        const speaking = await Speech.isSpeakingAsync();
+        if (speaking) {
+          console.log('Stopping current speech');
+          await Speech.stop();
+        }
+      } catch (err) {
+        console.error('Error checking speech status:', err);
+      }
+
+      // Set speaking state and speak
       setIsSpeaking(true);
       await Speech.speak(text, {
-        language: 'en',
+        language: 'en-US',
         pitch: 1.0,
-        rate: 0.9,
+        rate: 0.8,
+        onStart: () => {
+          console.log('Started speaking:', text);
+          setIsSpeaking(true);
+        },
         onDone: () => {
-          console.log('Finished speaking:', text); // Debug log
+          console.log('Finished speaking:', text);
           setIsSpeaking(false);
+          processNextInQueue();
+        },
+        onStopped: () => {
+          console.log('Speech stopped:', text);
+          setIsSpeaking(false);
+          processNextInQueue();
         },
         onError: (error) => {
           console.error('Speech error:', error);
           setIsSpeaking(false);
+          processNextInQueue();
         }
       });
+
+      lastSpokenLabelRef.current = text;
+      setLastSpokenTime(currentTime);
     } catch (error) {
       console.error('Speech error:', error);
       setIsSpeaking(false);
     }
   };
-
-  const checkLabels = async () => {
-    if (!isCameraLoaded) return;
-    
-    try {
-      const response = await fetch(`${SERVER_URL}/get_labels`, {
-        headers: {
-          'Cache-Control': 'no-cache',
-          'Pragma': 'no-cache'
-        }
-      });
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch labels');
+  useEffect(() => {
+    const initSpeech = async () => {
+      try {
+        const isSpeechAvailable = await Speech.isSpeakingAsync();
+        console.log('Speech synthesis available:', isSpeechAvailable);
+        await speakText('Navigation system initialized');
+      } catch (error) {
+        console.error('Speech initialization error:', error);
+        setError('Speech initialization failed');
       }
-      
-      const data = await response.json();
-      console.log('Received labels:', data);  // Debug log
-      
-      const currentLabel = data.labels;
-      
-      // Only speak if we have labels and they've changed
-      if (currentLabel && currentLabel !== lastSpokenLabelRef.current && !isSpeaking) {
-        console.log('Speaking new labels:', currentLabel);  // Debug log
-        lastSpokenLabelRef.current = currentLabel;
-        await speak(currentLabel);
-      }
-    } catch (error) {
-      console.error('Error checking labels:', error);
-    }
-  };
+    };
 
+    initSpeech();
+    return () => {
+      Speech.stop();
+    };
+  }, []);
   const checkServerConnection = async () => {
     try {
       console.log('Attempting to connect to:', SERVER_URL);
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000);
+      const timeoutId = setTimeout(() => controller.abort(), 15000);
 
       const response = await fetch(`${SERVER_URL}/`, {
         method: 'GET',
@@ -98,8 +123,11 @@ export default function Navigation() {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
-          'Cache-Control': 'no-cache'
+          'Cache-Control': 'no-cache',
+          'Connection': 'keep-alive'
         },
+        keepalive: true,
+        mode: 'cors'
       });
 
       clearTimeout(timeoutId);
@@ -115,117 +143,255 @@ export default function Navigation() {
       if (data.status === "Server is running") {
         setIsConnected(true);
         setError(null);
-        // Only speak the first time we connect
         if (!isConnected && !hasSpokenRef.current) {
-          await speak("Server connected successfully, loading camera feed");
+          await speakText("Server connected successfully");
           hasSpokenRef.current = true;
         }
+        return true;
       } else {
         throw new Error('Invalid server response');
       }
     } catch (error) {
-      console.error('Connection error details:', error.message);
-      setError(`Connection failed: ${error.message}. Make sure the server is running and accessible.`);
+      console.error('Connection error:', error.message);
+      setError(`Connection failed: ${error.message}`);
       setIsConnected(false);
-      if (error.name === 'AbortError') {
-        speak("Connection timed out");
-      } else {
-        speak("Failed to connect to server");
-      }
-      // Reset the flags when connection fails
-      hasSpokenRef.current = false;
       setIsCameraLoaded(false);
-      // Clear label check interval on connection failure
-      if (labelCheckIntervalRef.current) {
-        clearInterval(labelCheckIntervalRef.current);
-        labelCheckIntervalRef.current = null;
+      
+      if (!isSpeaking) {
+        await speakText("Connection failed. Retrying...");
       }
+      return false;
     }
   };
+  useEffect(() => {
+    (async () => {
+      try {
+        const { status } = await Camera.requestCameraPermissionsAsync();
+        setHasCameraPermission(status === 'granted');
+        
+        if (status === 'granted') {
+          console.log('Camera permission granted');
+          await checkServerConnection();
+        } else {
+          console.error('Camera permission denied');
+          setError('Camera permission is required');
+          await speakText('Please grant camera permission to use this app');
+        }
+      } catch (err) {
+        console.error('Error requesting camera permission:', err);
+        setError('Failed to access camera');
+        await speakText('Camera access failed');
+      }
+    })();
+  }, []);
 
-  const startLabelDetection = () => {
-    if (!labelCheckIntervalRef.current) {
-      console.log('Starting label detection');
-      // Check labels immediately
+  useEffect(() => {
+    let connectionInterval;
+    let labelInterval;
+    
+    const startServices = async () => {
+      if (hasCameraPermission !== true) {
+        return;
+      }
+
+      try {
+        const isConnected = await checkServerConnection();
+        if (isConnected) {
+          setIsCameraLoaded(true);
+          console.log('Server connected, starting intervals');
+          
+          // Start periodic label checking
+          labelInterval = setInterval(async () => {
+            if (!isSpeaking) {
+              try {
+                const response = await fetch(`${SERVER_URL}/get_labels`, {
+                  headers: {
+                    'Accept': 'application/json',
+                    'Cache-Control': 'no-cache'
+                  }
+                });
+
+                if (!response.ok) throw new Error('Failed to fetch labels');
+                
+                const data = await response.json();
+                if (data && data.labels && data.labels !== "No objects detected") {
+                  const currentTime = Date.now();
+                  if (data.labels !== lastSpokenLabelRef.current || 
+                      (currentTime - lastSpokenTime > 3000)) {
+                    await speakText(data.labels);
+                  }
+                }
+              } catch (error) {
+                console.error('Error checking labels:', error);
+                if (!isSpeaking && error.message !== lastSpokenLabelRef.current) {
+                  await speakText(`Error: ${error.message}`);
+                }
+              }
+            }
+          }, 2000);
+
+          // Start periodic connection checking
+          connectionInterval = setInterval(async () => {
+            const isStillConnected = await checkServerConnection();
+            if (!isStillConnected) {
+              setIsCameraLoaded(false);
+              await speakText('Connection lost. Attempting to reconnect.');
+            }
+          }, 5000);
+        }
+      } catch (error) {
+        console.error('Error starting services:', error);
+        setError('Failed to start services');
+        await speakText('Failed to start camera services');
+      }
+    };
+
+    startServices();
+
+    return () => {
+      if (connectionInterval) clearInterval(connectionInterval);
+      if (labelInterval) clearInterval(labelInterval);
+      Speech.stop();
+    };
+  }, [hasCameraPermission]);
+
+  useEffect(() => {
+    let labelInterval;
+    
+    const checkLabels = async () => {
+      if (isSpeaking) {
+        console.log('Already speaking, skipping label check');
+        return;
+      }
+
+      try {
+        console.log('Fetching labels from server...');
+        const response = await fetch(`${SERVER_URL}/get_labels`, {
+          headers: {
+            'Accept': 'application/json',
+            'Cache-Control': 'no-cache'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch labels');
+        }
+        
+        const data = await response.json();
+        console.log('Received data:', data);
+
+        if (data && data.cautions && data.cautions !== "All clear") {
+          console.log('Processing cautions:', data.cautions);
+          const currentTime = Date.now();
+          
+          if (data.cautions !== lastSpokenLabelRef.current || 
+              (currentTime - lastSpokenTime > 3000)) {
+            console.log('Speaking cautions:', data.cautions);
+            await speakText(data.cautions);
+          } else {
+            console.log('Skipping duplicate cautions');
+          }
+        } else {
+          console.log('No cautions to announce');
+        }
+      } catch (error) {
+        console.error('Error checking labels:', error);
+        if (!isSpeaking && error.message !== lastSpokenLabelRef.current) {
+          await speakText(`Error: ${error.message}`);
+        }
+      }
+    };
+
+    if (isCameraLoaded && isConnected && isTTSEnabled) {
+      console.log('Starting label check interval');
+      labelInterval = setInterval(checkLabels, 2000);
+      // Initial check
       checkLabels();
-      // Then start the interval
-      labelCheckIntervalRef.current = setInterval(checkLabels, 1000);
+    }
+
+    return () => {
+      if (labelInterval) {
+        console.log('Cleaning up label check interval');
+        clearInterval(labelInterval);
+      }
+    };
+  }, [isCameraLoaded, isConnected, isTTSEnabled]);
+
+  const toggleTTS = () => {
+    setIsTTSEnabled(!isTTSEnabled);
+    if (!isTTSEnabled) {
+      Speech.stop();
     }
   };
-
-  const renderErrorView = () => (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.infoContainer}>
-        <Text style={styles.errorText}>{error}</Text>
-        <Text style={styles.ipText}>Trying to connect to: {SERVER_URL}</Text>
-        <TouchableOpacity 
-          style={styles.button}
-          onPress={checkServerConnection}
-        >
-          <Text style={styles.text}>Retry Connection</Text>
-        </TouchableOpacity>
-      </View>
-    </SafeAreaView>
-  );
-
-  const renderLoadingView = () => (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.infoContainer}>
-        <Text style={styles.text}>Connecting to server...</Text>
-        <Text style={styles.ipText}>Server URL: {SERVER_URL}</Text>
-        <TouchableOpacity 
-          style={styles.button}
-          onPress={checkServerConnection}
-        >
-          <Text style={styles.text}>Retry Connection</Text>
-        </TouchableOpacity>
-      </View>
-    </SafeAreaView>
-  );
-
-  if (error) return renderErrorView();
-  if (!isConnected) return renderLoadingView();
+  const updateVoiceSettings = (newSettings) => {
+    setVoiceSettings({ ...voiceSettings, ...newSettings });
+  };
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.cameraContainer}>
-        <WebView
-          style={styles.camera}
-          source={{ uri: `${SERVER_URL}/video_feed` }}
-          originWhitelist={['*']}
-          javaScriptEnabled={true}
-          domStorageEnabled={true}
-          startInLoadingState={true}
-          onLoadStart={() => {
-            setIsCameraLoaded(false);
-            console.log('Camera loading started');
-          }}
-          onLoadEnd={() => {
-            console.log('Camera loaded, starting label detection');
-            setIsCameraLoaded(true);
-            // Start checking for labels after a short delay
-            setTimeout(startLabelDetection, 1500);
-          }}
-          onError={(syntheticEvent) => {
-            const { nativeEvent } = syntheticEvent;
-            const errorMessage = `WebView error: ${nativeEvent.description}`;
-            setError(errorMessage);
-            speak(errorMessage);
-            hasSpokenRef.current = false;
-            setIsCameraLoaded(false);
-            // Clear label check interval on WebView error
-            if (labelCheckIntervalRef.current) {
-              clearInterval(labelCheckIntervalRef.current);
-              labelCheckIntervalRef.current = null;
-            }
-          }}
-          renderLoading={() => (
+      {hasCameraPermission === null ? (
+        <View style={styles.loadingContainer}>
+          <Text style={styles.loadingText}>Requesting camera permission...</Text>
+        </View>
+      ) : hasCameraPermission === false ? (
+        <View style={styles.errorContainer}>
+          <Text style={styles.errorText}>No access to camera</Text>
+          <Text style={styles.errorSubText}>Please grant camera permission in your device settings</Text>
+        </View>
+      ) : error ? (
+        <View style={styles.errorContainer}>
+          <Text style={styles.errorText}>{error}</Text>
+        </View>
+      ) : (
+        <>
+          {isConnected && isCameraLoaded ? (
+            <View style={styles.videoContainer}>
+              <WebView
+                style={styles.video}
+                source={{ uri: `${SERVER_URL}/video_feed` }}
+                javaScriptEnabled={true}
+                domStorageEnabled={true}
+                startInLoadingState={true}
+                scalesPageToFit={true}
+                mixedContentMode="always"
+                allowsInlineMediaPlayback={true}
+                mediaPlaybackRequiresUserAction={false}
+                androidLayerType="hardware"
+                onError={(syntheticEvent) => {
+                  const { nativeEvent } = syntheticEvent;
+                  console.warn('WebView error:', nativeEvent);
+                  setError(`WebView error: ${nativeEvent.description}`);
+                }}
+                onHttpError={(syntheticEvent) => {
+                  const { nativeEvent } = syntheticEvent;
+                  console.warn('WebView HTTP error:', nativeEvent);
+                  setError(`HTTP error: ${nativeEvent.statusCode}`);
+                }}
+                renderLoading={() => (
+                  <View style={styles.loadingContainer}>
+                    <Text style={styles.loadingText}>Loading camera feed...</Text>
+                  </View>
+                )}
+              />
+            </View>
+          ) : (
             <View style={styles.loadingContainer}>
-              <Text style={styles.text}>Loading camera feed...</Text>
+              <Text style={styles.loadingText}>
+                {isConnected ? 'Loading camera...' : 'Connecting to server...'}
+              </Text>
             </View>
           )}
-        />
-      </View>
+          
+          <TouchableOpacity 
+            style={styles.ttsButton} 
+            onPress={toggleTTS}
+          >
+            <Text style={styles.buttonText}>
+              {isTTSEnabled ? 'Disable Voice' : 'Enable Voice'}
+            </Text>
+          </TouchableOpacity>
+        </>
+      )}
     </SafeAreaView>
   );
 }
@@ -235,19 +401,13 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#000',
   },
-  infoContainer: {
+  videoContainer: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 20,
-  },
-  cameraContainer: {
-    flex: 1,
-    width: '100%',
     height: '100%',
+    width: '100%',
     backgroundColor: '#000',
   },
-  camera: {
+  video: {
     flex: 1,
     width: '100%',
     height: '100%',
@@ -255,34 +415,45 @@ const styles = StyleSheet.create({
   },
   loadingContainer: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#000',
   },
-  button: {
-    backgroundColor: '#1a73e8',
-    padding: 15,
-    borderRadius: 10,
-    width: '80%',
-    alignItems: 'center',
-    marginVertical: 10,
-  },
-  text: {
+  loadingText: {
     color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: 18,
+    textAlign: 'center',
+    margin: 10,
+  },
+  errorContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#000',
+    padding: 20,
   },
   errorText: {
-    color: '#dc3545',
+    color: '#ff0000',
+    fontSize: 20,
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  errorSubText: {
+    color: '#fff',
     fontSize: 16,
     textAlign: 'center',
-    marginBottom: 20,
   },
-  ipText: {
+  ttsButton: {
+    position: 'absolute',
+    bottom: 20,
+    right: 20,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    padding: 15,
+    borderRadius: 10,
+    zIndex: 1000,
+  },
+  buttonText: {
     color: '#fff',
-    fontSize: 14,
-    textAlign: 'center',
-    marginBottom: 20,
-    opacity: 0.7,
-  }
+    fontSize: 16,
+  },
 });
