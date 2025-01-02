@@ -1,0 +1,8 @@
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Say>Emergency alert! The user of Blind Assistant app has triggered an SOS alert. They may need immediate assistance.</Say>
+            <Pause length="1"/>
+            <Say>This is an automated emergency call. Please respond immediately if you can provide assistance.</Say>
+        </Response>
+        

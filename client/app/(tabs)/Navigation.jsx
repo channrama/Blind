@@ -1,8 +1,14 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, Platform } from 'react-native';
 import WebView from 'react-native-webview';
 import * as Speech from 'expo-speech';
 import { Camera } from 'expo-camera';
+import { useFocusEffect } from '@react-navigation/native';
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: 'http://192.168.62.67:5000/api'
+});
 
 export default function Navigation() {
   const [isConnected, setIsConnected] = useState(false);
@@ -26,7 +32,7 @@ export default function Navigation() {
   const speakTimeoutRef = useRef(null);
   const speechQueueRef = useRef([]);
   const connectionCheckIntervalRef = useRef(null);
-  const SERVER_URL = 'http://10.0.2.172:5000';
+  const SERVER_URL = 'http://192.168.62.67:5000';
   const processNextInQueue = async () => {
     if (speechQueueRef.current.length > 0 && !isSpeaking) {
       const nextText = speechQueueRef.current.shift();
@@ -107,8 +113,23 @@ export default function Navigation() {
     };
 
     initSpeech();
+
+    // Cleanup function when component unmounts
     return () => {
+      console.log('Navigation component unmounting...');
       Speech.stop();
+      // Stop object detection by disabling TTS
+      api.post('/api/tts/control', { enabled: false })
+        .catch(error => console.error('Failed to disable TTS:', error));
+      // Clear all intervals
+      if (labelCheckIntervalRef.current) {
+        clearInterval(labelCheckIntervalRef.current);
+      }
+      if (connectionCheckIntervalRef.current) {
+        clearInterval(connectionCheckIntervalRef.current);
+      }
+      setIsCameraLoaded(false);
+      setIsConnected(false);
     };
   }, []);
   const checkServerConnection = async () => {
@@ -316,6 +337,32 @@ export default function Navigation() {
       }
     };
   }, [isCameraLoaded, isConnected, isTTSEnabled]);
+
+  useFocusEffect(
+    React.useCallback(() => {
+      console.log('Navigation screen focused');
+      setIsTTSEnabled(true);
+
+      // Cleanup when screen loses focus
+      return () => {
+        console.log('Navigation screen unfocused');
+        // Stop TTS and clear intervals
+        Speech.stop();
+        setIsTTSEnabled(false);
+        if (labelCheckIntervalRef.current) {
+          clearInterval(labelCheckIntervalRef.current);
+          labelCheckIntervalRef.current = null;
+        }
+        if (connectionCheckIntervalRef.current) {
+          clearInterval(connectionCheckIntervalRef.current);
+          connectionCheckIntervalRef.current = null;
+        }
+        // Notify server to disable TTS
+        api.post('/api/tts/control', { enabled: false })
+          .catch(error => console.error('Failed to disable TTS:', error));
+      };
+    }, [])
+  );
 
   const toggleTTS = () => {
     setIsTTSEnabled(!isTTSEnabled);
