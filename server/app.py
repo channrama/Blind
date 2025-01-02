@@ -38,39 +38,50 @@ CORS(app, resources={
         "allow_headers": ["Content-Type", "Authorization"]
     }
 })
-
-# Twilio configuration
 TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
 TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
 TWILIO_PHONE_NUMBER = os.getenv('TWILIO_PHONE_NUMBER')
-EMERGENCY_CONTACT = os.getenv('EMERGENCY_CONTACT', '+919353842851')
-
-# Initialize Twilio client
+DEFAULT_EMERGENCY_CONTACTS = ['+919353842851']
+verified_numbers = []
 try:
-    twilio_client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
-    account = twilio_client.api.accounts(TWILIO_ACCOUNT_SID).fetch()
-    logger.info("Twilio client initialized successfully")
+    if TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN:
+        twilio_client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
+        try:
+            incoming_numbers = twilio_client.incoming_phone_numbers.list()
+            outgoing_caller_ids = twilio_client.outgoing_caller_ids.list()
+            verified_numbers = []
+            for number in incoming_numbers:
+                verified_numbers.append(number.phone_number)
+            for caller_id in outgoing_caller_ids:
+                verified_numbers.append(caller_id.phone_number)
+            verified_numbers = list(set(verified_numbers))
+            
+            if not verified_numbers:
+                verified_numbers = DEFAULT_EMERGENCY_CONTACTS
+                logger.warning("No verified numbers found in Twilio, using default numbers")
+            else:
+                logger.info(f"Found {len(verified_numbers)} verified numbers: {verified_numbers}")
+        except Exception as e:
+            logger.error(f"Error getting verified numbers: {e}")
+            verified_numbers = DEFAULT_EMERGENCY_CONTACTS
+    else:
+        logger.error("Twilio credentials not found")
+        twilio_client = None
+        verified_numbers = DEFAULT_EMERGENCY_CONTACTS
 except Exception as e:
     logger.error(f"Error initializing Twilio client: {e}")
     twilio_client = None
-
-# Load the YOLO model
+    verified_numbers = DEFAULT_EMERGENCY_CONTACTS
 try:
     model = YOLO('yolov5su.pt')
     logger.info(f"YOLO model loaded successfully. Available classes: {model.names}")
 except Exception as e:
     logger.error(f"Error loading YOLO model: {e}")
     model = None
-
-# Global variables
 latest_labels = "No objects detected"
 is_tts_enabled = True
-
-# Initialize text-to-speech engine
 engine = pyttsx3.init()
 engine.setProperty('rate', 150)
-
-# Initialize cautions dictionary
 CAUTIONS = {
     "person": "Caution! Person detected in your path",
     "bicycle": "Warning! Bicycle detected nearby",
@@ -82,10 +93,7 @@ CAUTIONS = {
     "stop sign": "Important! Stop sign detected",
     "bench": "Notice! Bench nearby",
     "chair": "Caution! Chair in your path",
-    # ... (rest of your cautions dictionary)
 }
-
-# Last spoken time for each label
 last_spoken = {}
 SPEAK_COOLDOWN = 3
 
@@ -190,9 +198,6 @@ def trigger_sos():
         return jsonify({"error": "Twilio service not available"}), 500
 
     try:
-        # Disable TTS during emergency
-        is_tts_enabled = False
-        
         data = request.get_json()
         logger.info(f"Received SOS trigger request with data: {data}")
         
@@ -208,51 +213,70 @@ def trigger_sos():
             message = "🚨 EMERGENCY ALERT: Your friend needs help! (Location not available)"
             location_available = False
 
-        # Send SMS
-        logger.info(f"Sending SMS to {EMERGENCY_CONTACT}")
-        sms = twilio_client.messages.create(
-            to=EMERGENCY_CONTACT,
-            from_=TWILIO_PHONE_NUMBER,
-            body=message
-        )
-        logger.info(f"SMS sent successfully: {sms.sid}")
+        successful_contacts = []
+        failed_contacts = []
 
-        # Make voice call
-        logger.info(f"Initiating voice call to {EMERGENCY_CONTACT}")
-        twiml = f'''<?xml version="1.0" encoding="UTF-8"?>
-        <Response>
-            <Say voice="alice" language="en-US">Emergency Alert! Your friend needs immediate help!</Say>
-            <Pause length="1"/>
-            <Say voice="alice" language="en-US">This is not a drill. Please respond immediately.</Say>
-            <Pause length="1"/>
-            <Say voice="alice" language="en-US">{"Their location has been sent to you via SMS." if location_available else "Location information is not available."}</Say>
-            <Pause length="2"/>
-            <Say voice="alice" language="en-US">Repeating: Emergency Alert! Please check your SMS for details.</Say>
-        </Response>'''
+        # Try sending SMS and making calls to all verified numbers
+        for emergency_contact in verified_numbers:
+            try:
+                # Send SMS
+                logger.info(f"Sending SMS to {emergency_contact}")
+                sms = twilio_client.messages.create(
+                    to=emergency_contact,
+                    from_=TWILIO_PHONE_NUMBER,
+                    body=message
+                )
+                logger.info(f"SMS sent successfully to {emergency_contact}: {sms.sid}")
 
-        call = twilio_client.calls.create(
-            twiml=twiml,
-            to=EMERGENCY_CONTACT,
-            from_=TWILIO_PHONE_NUMBER
-        )
-        logger.info(f"Voice call initiated successfully: {call.sid}")
+                # Make voice call
+                logger.info(f"Initiating voice call to {emergency_contact}")
+                twiml = f'''<?xml version="1.0" encoding="UTF-8"?>
+                <Response>
+                    <Say voice="alice" language="en-US">Emergency Alert! Your friend needs immediate help!</Say>
+                    <Pause length="1"/>
+                    <Say voice="alice" language="en-US">This is not a drill. Please respond immediately.</Say>
+                    <Pause length="1"/>
+                    <Say voice="alice" language="en-US">{"Their location has been sent to you via SMS." if location_available else "Location information is not available."}</Say>
+                    <Pause length="2"/>
+                    <Say voice="alice" language="en-US">Repeating: Emergency Alert! Please check your SMS for details.</Say>
+                </Response>'''
 
-        return jsonify({
-            "status": "ok",
-            "message": "Emergency alert sent successfully",
-            "sms_sid": sms.sid,
-            "call_sid": call.sid
-        })
+                call = twilio_client.calls.create(
+                    twiml=twiml,
+                    to=emergency_contact,
+                    from_=TWILIO_PHONE_NUMBER
+                )
+                logger.info(f"Voice call initiated successfully to {emergency_contact}: {call.sid}")
+                
+                successful_contacts.append({
+                    "number": emergency_contact,
+                    "sms_sid": sms.sid,
+                    "call_sid": call.sid
+                })
+            except Exception as e:
+                logger.error(f"Failed to contact {emergency_contact}: {e}")
+                failed_contacts.append({
+                    "number": emergency_contact,
+                    "error": str(e)
+                })
 
-    except TwilioRestException as e:
-        logger.error(f"Twilio error: {e}")
-        return jsonify({"error": f"Failed to send emergency alert: {str(e)}"}), 500
+        # Return response based on success/failure
+        if successful_contacts:
+            return jsonify({
+                "status": "ok",
+                "message": f"Emergency alert sent successfully to {len(successful_contacts)} contacts",
+                "successful_contacts": successful_contacts,
+                "failed_contacts": failed_contacts
+            })
+        else:
+            return jsonify({
+                "error": "Failed to contact any emergency numbers",
+                "failed_contacts": failed_contacts
+            }), 500
+
     except Exception as e:
         logger.error(f"Error in trigger_sos: {e}")
         return jsonify({"error": str(e)}), 500
-    finally:
-        # Re-enable TTS after emergency call is complete
-        is_tts_enabled = True
 
 @app.route('/api/tts/control', methods=['POST'])
 def control_tts():
@@ -300,6 +324,19 @@ def get_labels():
     except Exception as e:
         logger.error(f"Error in get_labels: {e}")
         traceback.print_exc()
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/emergency-contacts', methods=['GET'])
+def get_emergency_contacts():
+    """Get list of current emergency contacts"""
+    try:
+        return jsonify({
+            "status": "ok",
+            "contacts": verified_numbers,
+            "total": len(verified_numbers)
+        })
+    except Exception as e:
+        logger.error(f"Error getting emergency contacts: {e}")
         return jsonify({"error": str(e)}), 500
 
 @app.after_request
