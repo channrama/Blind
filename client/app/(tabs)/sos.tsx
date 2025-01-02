@@ -5,7 +5,7 @@ import * as Location from 'expo-location';
 import axios from 'axios';
 
 // Update this to match your computer's IP address
-const SERVER_URL = 'http://192.168.62.67:5000';
+const SERVER_URL = 'http://192.168.127.91:5000';
 
 // Create axios instance with default config
 const api = axios.create({

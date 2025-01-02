@@ -422,7 +422,7 @@ def after_request(response):
 
 if __name__ == '__main__':
     try:
-        logger.info("Starting server on http://192.168.62.67:5000")
+        logger.info("Starting server on http://192.168.127.91:5000")
         app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
     except Exception as e:
         logger.error(f"Error starting server: {e}")

@@ -7,7 +7,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://192.168.62.67:5000/api'
+  baseURL: 'http://192.168.127.91:5000/api'
 });
 
 export default function Navigation() {
@@ -32,7 +32,7 @@ export default function Navigation() {
   const speakTimeoutRef = useRef(null);
   const speechQueueRef = useRef([]);
   const connectionCheckIntervalRef = useRef(null);
-  const SERVER_URL = 'http://192.168.62.67:5000';
+  const SERVER_URL = 'http://192.168.127.91:5000';
   const processNextInQueue = async () => {
     if (speechQueueRef.current.length > 0 && !isSpeaking) {
       const nextText = speechQueueRef.current.shift();
