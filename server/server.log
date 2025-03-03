@@ -20118,3 +20118,1714 @@
 2025-01-03 00:09:44,491 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000017EF1528F50>.Release() -> 0
 2025-01-03 00:09:44,492 - DEBUG - 0 active COM objects: Removed <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000017EF1528F50>
 2025-01-03 00:09:44,493 - DEBUG - Remaining: []
+2025-03-03 23:21:15,008 - INFO - -- BEGIN Twilio API Request --
+2025-03-03 23:21:15,008 - INFO - GET Request: https://api.twilio.com/2010-04-01/Accounts/AC9dd46c8f6ed175f28d1dfe46207110ff/IncomingPhoneNumbers.json
+2025-03-03 23:21:15,008 - INFO - Headers:
+2025-03-03 23:21:15,008 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-03-03 23:21:15,023 - INFO - Accept : application/json
+2025-03-03 23:21:15,023 - INFO - User-Agent : twilio-python/9.4.1 (Windows AMD64) Python/3.12.8
+2025-03-03 23:21:15,023 - INFO - X-Twilio-Client : python-9.4.1
+2025-03-03 23:21:15,023 - INFO - Accept-Charset : utf-8
+2025-03-03 23:21:15,023 - INFO - -- END Twilio API Request --
+2025-03-03 23:21:16,279 - INFO - Response Status Code: 401
+2025-03-03 23:21:16,279 - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '107', 'Connection': 'keep-alive', 'Date': 'Mon, 03 Mar 2025 17:51:13 GMT', 'X-Twilio-Error-Code': '20003', 'Twilio-Request-Id': 'RQee6c464e0138f80d22cb18ef743b3bbc', 'Twilio-Request-Duration': '0.024', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'WWW-Authenticate': 'Basic realm="Twilio API"', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 63ed523131fa028172b87f6c464ca1d8.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'MAA51-P3', 'X-Amz-Cf-Id': '4vVqn-p1ExZnCdBbLw74bNKZAiUEzB4sEYpxxcAMKRU2I95A-ar5Eg==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-03-03 23:21:16,290 - ERROR - Error getting verified numbers: ('Unable to fetch page', HTTP 401 {"code":20003,"message":"Authenticate","more_info":"https://www.twilio.com/docs/errors/20003","status":401})
+2025-03-03 23:21:16,422 - INFO - YOLO model loaded successfully. Available classes: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
+2025-03-03 23:21:16,448 - DEBUG - CoInitializeEx(None, 2)
+2025-03-03 23:21:16,524 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\chann\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-03 23:21:16,524 - INFO - Using writeable comtypes cache directory: 'C:\Users\chann\AppData\Local\Programs\Python\Python312\Lib\site-packages\comtypes\gen'
+2025-03-03 23:21:16,541 - DEBUG - SAPI.SpVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-03-03 23:21:16,541 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-03-03 23:21:16,549 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x1f8bba69260 at 1f8e1fdedd0>)
+2025-03-03 23:21:16,551 - DEBUG - Does implement IProvideClassInfo
+2025-03-03 23:21:16,555 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-03-03 23:21:16,556 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8bba692a0 at 1f8e1fdf1d0>
+2025-03-03 23:21:16,556 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:21:16,563 - INFO - Could not import comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4: Typelib different than module
+2025-03-03 23:21:16,569 - INFO - # Generating comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4
+2025-03-03 23:21:16,571 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0120 at 1f8e21fd8d0>
+2025-03-03 23:21:16,573 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0120 at 1f8e21fd750>
+2025-03-03 23:21:16,573 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fd150>
+2025-03-03 23:21:16,573 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0178 at 1f8e21fcdd0>
+2025-03-03 23:21:16,573 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fce50>
+2025-03-03 23:21:16,576 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0120 at 1f8e1fdf350>
+2025-03-03 23:21:16,576 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0120 at 1f8e21fdad0>
+2025-03-03 23:21:16,576 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe150>
+2025-03-03 23:21:16,577 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0330 at 1f8e21fe450>
+2025-03-03 23:21:16,577 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0120 at 1f8e21fe150>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21ff4d0>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fedd0>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e03e0 at 1f8e21fe950>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21feb50>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0388 at 1f8e21fe1d0>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fe0d0>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e02d8 at 1f8e21fddd0>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fdbd0>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0280 at 1f8e21fdb50>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd250>
+2025-03-03 23:21:16,578 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0438 at 1f8e21fd1d0>
+2025-03-03 23:21:16,580 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd150>
+2025-03-03 23:21:16,580 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0490 at 1f8e21fd550>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fd4d0>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0228 at 1f8e21fcf50>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fc9d0>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0280 at 1f8e1fdf350>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0330 at 1f8e1fdf650>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0388 at 1f8e1fdf350>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0438 at 1f8e1fdf650>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0490 at 1f8e1fdf350>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fcb50>
+2025-03-03 23:21:16,582 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0540 at 1f8e21fc450>
+2025-03-03 23:21:16,586 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,586 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e04e8 at 1f8e1fdf650>
+2025-03-03 23:21:16,587 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fdcd0>
+2025-03-03 23:21:16,587 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0648 at 1f8e21fda50>
+2025-03-03 23:21:16,587 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fd250>
+2025-03-03 23:21:16,587 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e05f0 at 1f8e21fced0>
+2025-03-03 23:21:16,587 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,589 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0598 at 1f8e1fdf350>
+2025-03-03 23:21:16,589 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0648 at 1f8e1fdf650>
+2025-03-03 23:21:16,591 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd650>
+2025-03-03 23:21:16,591 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0750 at 1f8e21fd6d0>
+2025-03-03 23:21:16,591 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0750 at 1f8e21fd650>
+2025-03-03 23:21:16,591 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fe6d0>
+2025-03-03 23:21:16,593 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0800 at 1f8e21fded0>
+2025-03-03 23:21:16,594 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe7d0>
+2025-03-03 23:21:16,594 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e07a8 at 1f8e21fddd0>
+2025-03-03 23:21:16,595 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e07a8 at 1f8e21fddd0>
+2025-03-03 23:21:16,595 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fd2d0>
+2025-03-03 23:21:16,595 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06f8 at 1f8e21fc450>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e1fdf350>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0750 at 1f8e1fdf650>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e07a8 at 1f8e1fdf350>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e21fd6d0>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e21fdb50>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd6d0>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0908 at 1f8e21fd5d0>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fda50>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e08b0 at 1f8e21fced0>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0858 at 1f8e1fdf650>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0908 at 1f8e1fdf350>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fdb50>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0a10 at 1f8e21fd4d0>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e08b0 at 1f8e21fd7d0>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e09b8 at 1f8e21fc450>
+2025-03-03 23:21:16,596 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,600 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0960 at 1f8e1fdf650>
+2025-03-03 23:21:16,600 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0a10 at 1f8e1fdf350>
+2025-03-03 23:21:16,600 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e08b0 at 1f8e21fd2d0>
+2025-03-03 23:21:16,600 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0ac0 at 1f8e21fced0>
+2025-03-03 23:21:16,602 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,602 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0a68 at 1f8e1fdf650>
+2025-03-03 23:21:16,606 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e08b0 at 1f8e21fd750>
+2025-03-03 23:21:16,606 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0b70 at 1f8e21fc450>
+2025-03-03 23:21:16,606 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,639 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0b18 at 1f8e1fdf350>
+2025-03-03 23:21:16,640 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0598 at 1f8e21fd7d0>
+2025-03-03 23:21:16,642 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e04e8 at 1f8e21fe7d0>
+2025-03-03 23:21:16,642 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e21fdb50>
+2025-03-03 23:21:16,642 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0648 at 1f8e21fd5d0>
+2025-03-03 23:21:16,642 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e08b0 at 1f8e21fd650>
+2025-03-03 23:21:16,642 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0c20 at 1f8e21fced0>
+2025-03-03 23:21:16,642 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,642 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0bc8 at 1f8e1fdf650>
+2025-03-03 23:21:16,652 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0c20 at 1f8e21fdc50>
+2025-03-03 23:21:16,654 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0cd0 at 1f8e21fc450>
+2025-03-03 23:21:16,655 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,655 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0c78 at 1f8e1fdf350>
+2025-03-03 23:21:16,655 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe950>
+2025-03-03 23:21:16,655 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0dd8 at 1f8e21febd0>
+2025-03-03 23:21:16,655 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fe8d0>
+2025-03-03 23:21:16,655 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0d80 at 1f8e21fe7d0>
+2025-03-03 23:21:16,657 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fcb50>
+2025-03-03 23:21:16,657 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0d28 at 1f8e21fd150>
+2025-03-03 23:21:16,657 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fdbd0>
+2025-03-03 23:21:16,657 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fdbd0>
+2025-03-03 23:21:16,657 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fdd50>
+2025-03-03 23:21:16,657 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fdd50>
+2025-03-03 23:21:16,657 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0858 at 1f8e21fd9d0>
+2025-03-03 23:21:16,660 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0858 at 1f8e21fd9d0>
+2025-03-03 23:21:16,661 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe1d0>
+2025-03-03 23:21:16,661 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0e30 at 1f8e21fe7d0>
+2025-03-03 23:21:16,661 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0e30 at 1f8e21fd9d0>
+2025-03-03 23:21:16,661 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fdb50>
+2025-03-03 23:21:16,661 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0e88 at 1f8e21fd2d0>
+2025-03-03 23:21:16,661 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0e88 at 1f8e21fdb50>
+2025-03-03 23:21:16,661 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0e30 at 1f8e21fe3d0>
+2025-03-03 23:21:16,661 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0e30 at 1f8e21fe7d0>
+2025-03-03 23:21:16,664 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe7d0>
+2025-03-03 23:21:16,664 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0ee0 at 1f8e21fd1d0>
+2025-03-03 23:21:16,664 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0858 at 1f8e21fe250>
+2025-03-03 23:21:16,664 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0ee0 at 1f8e21fd250>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0388 at 1f8e21fe850>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0388 at 1f8e21fd150>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fd5d0>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e00c8 at 1f8e21fced0>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0070 at 1f8e1fdf650>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0d28 at 1f8e1fdf350>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0dd8 at 1f8e1fdf650>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0e30 at 1f8e1fdf350>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0e88 at 1f8e1fdf650>
+2025-03-03 23:21:16,665 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0ee0 at 1f8e1fdf350>
+2025-03-03 23:21:16,670 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fe3d0>
+2025-03-03 23:21:16,670 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd250>
+2025-03-03 23:21:16,670 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0f90 at 1f8e21fd650>
+2025-03-03 23:21:16,670 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd950>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0fe8 at 1f8e21fd6d0>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0f90 at 1f8e21fd750>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0fe8 at 1f8e21fe3d0>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fc450>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0f38 at 1f8e1fdf650>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0f90 at 1f8e1fdf350>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0fe8 at 1f8e1fdf650>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fe1d0>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fe8d0>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fe8d0>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fe150>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0858 at 1f8e21fe150>
+2025-03-03 23:21:16,678 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0858 at 1f8e21fd4d0>
+2025-03-03 23:21:16,683 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd4d0>
+2025-03-03 23:21:16,683 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e10f0 at 1f8e21fe2d0>
+2025-03-03 23:21:16,683 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e10f0 at 1f8e21fd4d0>
+2025-03-03 23:21:16,683 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0598 at 1f8e21ff0d0>
+2025-03-03 23:21:16,683 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fe950>
+2025-03-03 23:21:16,685 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e11a0 at 1f8e21fe6d0>
+2025-03-03 23:21:16,685 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd7d0>
+2025-03-03 23:21:16,685 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1148 at 1f8e21fe9d0>
+2025-03-03 23:21:16,686 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fe9d0>
+2025-03-03 23:21:16,686 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fe350>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1040 at 1f8e21fecd0>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff350>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e12a8 at 1f8e21fefd0>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0070 at 1f8e21ff450>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0070 at 1f8e21ff6d0>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff3d0>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1300 at 1f8e21ff450>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1300 at 1f8e21ff3d0>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1300 at 1f8e21fedd0>
+2025-03-03 23:21:16,687 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1300 at 1f8e21ff6d0>
+2025-03-03 23:21:16,692 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff3d0>
+2025-03-03 23:21:16,692 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1358 at 1f8e21fefd0>
+2025-03-03 23:21:16,692 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1358 at 1f8e21ff3d0>
+2025-03-03 23:21:16,692 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff150>
+2025-03-03 23:21:16,695 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e13b0 at 1f8e21ff450>
+2025-03-03 23:21:16,695 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e13b0 at 1f8e21ff150>
+2025-03-03 23:21:16,695 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e21ff6d0>
+2025-03-03 23:21:16,695 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e21ff750>
+2025-03-03 23:21:16,696 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e11f8 at 1f8e222c3d0>
+2025-03-03 23:21:16,697 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c0d0>
+2025-03-03 23:21:16,697 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e14b8 at 1f8e21ffb50>
+2025-03-03 23:21:16,697 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e14b8 at 1f8e222c0d0>
+2025-03-03 23:21:16,697 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222dad0>
+2025-03-03 23:21:16,697 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1670 at 1f8e222d9d0>
+2025-03-03 23:21:16,697 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e15c0 at 1f8e222e8d0>
+2025-03-03 23:21:16,700 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22302d0>
+2025-03-03 23:21:16,700 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e18d8 at 1f8e22301d0>
+2025-03-03 23:21:16,700 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e15c0 at 1f8e2230750>
+2025-03-03 23:21:16,700 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e16c8 at 1f8e22306d0>
+2025-03-03 23:21:16,700 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222fdd0>
+2025-03-03 23:21:16,700 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1880 at 1f8e222fad0>
+2025-03-03 23:21:16,700 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f950>
+2025-03-03 23:21:16,700 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1828 at 1f8e222f850>
+2025-03-03 23:21:16,703 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222f150>
+2025-03-03 23:21:16,704 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e17d0 at 1f8e222ee50>
+2025-03-03 23:21:16,704 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ecd0>
+2025-03-03 23:21:16,704 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1778 at 1f8e222ebd0>
+2025-03-03 23:21:16,704 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e16c8 at 1f8e222e750>
+2025-03-03 23:21:16,704 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e5d0>
+2025-03-03 23:21:16,704 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1930 at 1f8e222e7d0>
+2025-03-03 23:21:16,704 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e16c8 at 1f8e222ec50>
+2025-03-03 23:21:16,707 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e15c0 at 1f8e222e9d0>
+2025-03-03 23:21:16,707 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e16c8 at 1f8e222e350>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e650>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1988 at 1f8e222e9d0>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222e3d0>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1720 at 1f8e222e0d0>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ddd0>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e16c8 at 1f8e222dd50>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e16c8 at 1f8e222dcd0>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222d650>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1618 at 1f8e222d350>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d1d0>
+2025-03-03 23:21:16,708 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e15c0 at 1f8e222d0d0>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e15c0 at 1f8e222cfd0>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1670 at 1f8e222cc50>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e15c0 at 1f8e222c850>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222c950>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1568 at 1f8e222c450>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c2d0>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1510 at 1f8e222c350>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ffd50>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e19e0 at 1f8e21ffc50>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e19e0 at 1f8e21ffdd0>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e19e0 at 1f8e21ffe50>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e19e0 at 1f8e21ff9d0>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e19e0 at 1f8e21ffb50>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fff50>
+2025-03-03 23:21:16,711 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1a38 at 1f8e21fee50>
+2025-03-03 23:21:16,717 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1a38 at 1f8e21ff9d0>
+2025-03-03 23:21:16,717 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e19e0 at 1f8e21ffe50>
+2025-03-03 23:21:16,717 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1a38 at 1f8e222c0d0>
+2025-03-03 23:21:16,717 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222c6d0>
+2025-03-03 23:21:16,719 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1ae8 at 1f8e222c5d0>
+2025-03-03 23:21:16,719 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c3d0>
+2025-03-03 23:21:16,719 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1a90 at 1f8e222c550>
+2025-03-03 23:21:16,719 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1a90 at 1f8e222c2d0>
+2025-03-03 23:21:16,719 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c550>
+2025-03-03 23:21:16,719 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1b40 at 1f8e222c0d0>
+2025-03-03 23:21:16,719 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21ffad0>
+2025-03-03 23:21:16,719 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1460 at 1f8e21ff850>
+2025-03-03 23:21:16,719 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fefd0>
+2025-03-03 23:21:16,721 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1408 at 1f8e21ff5d0>
+2025-03-03 23:21:16,721 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e11f8 at 1f8e222c2d0>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222c750>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1ca0 at 1f8e222cad0>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c050>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1c48 at 1f8e222c4d0>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e222c4d0>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e222c9d0>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1da8 at 1f8e222e150>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1da8 at 1f8e222ef50>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222e6d0>
+2025-03-03 23:21:16,723 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1eb0 at 1f8e222e4d0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e9d0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1e58 at 1f8e222ded0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e1d0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1f08 at 1f8e222ded0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222d850>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1e00 at 1f8e222d5d0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d350>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1da8 at 1f8e222d450>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1f08 at 1f8e222ecd0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2010 at 1f8e222ebd0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1f60 at 1f8e222e8d0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222e450>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2068 at 1f8e222e9d0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e0d0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2010 at 1f8e222e050>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222dd50>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1fb8 at 1f8e222d7d0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d3d0>
+2025-03-03 23:21:16,727 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1f60 at 1f8e222d1d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f3d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2220 at 1f8e222f4d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1f08 at 1f8e222eed0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1f08 at 1f8e222f0d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222ecd0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e21c8 at 1f8e222e7d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e0d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2170 at 1f8e222e4d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222d550>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2118 at 1f8e222d5d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d950>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e20c0 at 1f8e222d450>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2220 at 1f8e222e6d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222e750>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2380 at 1f8e222e9d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e0d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2328 at 1f8e222e850>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222e950>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e22d0 at 1f8e222d7d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d350>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2278 at 1f8e222d1d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2220 at 1f8e222d050>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222c850>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1d50 at 1f8e222ced0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c350>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1cf8 at 1f8e222c3d0>
+2025-03-03 23:21:16,731 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1b98 at 1f8e222dd50>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1cf8 at 1f8e222dad0>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222e150>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e24e0 at 1f8e222d3d0>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222cf50>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2488 at 1f8e222d1d0>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222d050>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2430 at 1f8e222c950>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c550>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e23d8 at 1f8e222c3d0>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0a68 at 1f8e222cd50>
+2025-03-03 23:21:16,738 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0ee0 at 1f8e222c1d0>
+2025-03-03 23:21:16,741 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c4d0>
+2025-03-03 23:21:16,741 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2538 at 1f8e222c0d0>
+2025-03-03 23:21:16,741 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21ffc50>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1bf0 at 1f8e21ff350>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff1d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1b98 at 1f8e21feed0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff3d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2590 at 1f8e21ff2d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21ff0d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1250 at 1f8e21fead0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe1d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e11f8 at 1f8e21fd9d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21feb50>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e25e8 at 1f8e21fe9d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e21fd0d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0388 at 1f8e21fd2d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0388 at 1f8e21fda50>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0388 at 1f8e21fd2d0>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fd950>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1098 at 1f8e21fdb50>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1040 at 1f8e1fdf350>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e10f0 at 1f8e1fdf650>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1148 at 1f8e1fdf350>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e11f8 at 1f8e1fdf650>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e12a8 at 1f8e1fdf350>
+2025-03-03 23:21:16,742 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1300 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1358 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e13b0 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1408 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e14b8 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1510 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e15c0 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1670 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e16c8 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1778 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1828 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e18d8 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1930 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1988 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e19e0 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1a38 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1a90 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1b40 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1b98 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1c48 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1cf8 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1da8 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1e58 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1f08 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1f60 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2010 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e20c0 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2170 at 1f8e1fdf350>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2220 at 1f8e1fdf650>
+2025-03-03 23:21:16,747 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2278 at 1f8e1fdf350>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2328 at 1f8e1fdf650>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e23d8 at 1f8e1fdf350>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2488 at 1f8e1fdf650>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2538 at 1f8e1fdf350>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2590 at 1f8e1fdf650>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e25e8 at 1f8e1fdf350>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2590 at 1f8e21fcdd0>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe9d0>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2698 at 1f8e21fd250>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1b98 at 1f8e21fe9d0>
+2025-03-03 23:21:16,751 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1b98 at 1f8e21fe850>
+2025-03-03 23:21:16,754 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1b98 at 1f8e21fe1d0>
+2025-03-03 23:21:16,754 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e12a8 at 1f8e21fe7d0>
+2025-03-03 23:21:16,754 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e10f0 at 1f8e21fe7d0>
+2025-03-03 23:21:16,754 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fd650>
+2025-03-03 23:21:16,754 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,754 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2640 at 1f8e1fdf650>
+2025-03-03 23:21:16,754 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2698 at 1f8e1fdf350>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1bf0 at 1f8e21fd650>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2748 at 1f8e21fd950>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e26f0 at 1f8e1fdf650>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21feb50>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2850 at 1f8e21fda50>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c9d0>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2a08 at 1f8e222d2d0>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2850 at 1f8e222e850>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e9d0>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2bc0 at 1f8e222e650>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222c8d0>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2b68 at 1f8e222d850>
+2025-03-03 23:21:16,757 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d650>
+2025-03-03 23:21:16,761 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2b10 at 1f8e222d3d0>
+2025-03-03 23:21:16,761 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e222ccd0>
+2025-03-03 23:21:16,761 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2ab8 at 1f8e222c950>
+2025-03-03 23:21:16,762 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ded0>
+2025-03-03 23:21:16,762 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2a60 at 1f8e222c9d0>
+2025-03-03 23:21:16,762 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21ffb50>
+2025-03-03 23:21:16,762 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e29b0 at 1f8e21ff950>
+2025-03-03 23:21:16,762 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fefd0>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2958 at 1f8e21ff350>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fedd0>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2900 at 1f8e21fd7d0>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fed50>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e28a8 at 1f8e21fe6d0>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2bc0 at 1f8e21fe9d0>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2bc0 at 1f8e21fd650>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2bc0 at 1f8e21fe6d0>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2bc0 at 1f8e21fe8d0>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2850 at 1f8e21fd750>
+2025-03-03 23:21:16,764 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2a60 at 1f8e21fe150>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e28a8 at 1f8e21fe6d0>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fe1d0>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e27f8 at 1f8e21fe850>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e27a0 at 1f8e1fdf350>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2850 at 1f8e1fdf650>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e28a8 at 1f8e1fdf350>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2958 at 1f8e1fdf650>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2a08 at 1f8e1fdf350>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2a60 at 1f8e1fdf650>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2b10 at 1f8e1fdf350>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2bc0 at 1f8e1fdf650>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2c18 at 1f8e1fdf350>
+2025-03-03 23:21:16,767 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,770 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2c70 at 1f8e1fdf650>
+2025-03-03 23:21:16,770 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,770 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2cc8 at 1f8e1fdf350>
+2025-03-03 23:21:16,771 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,772 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2d20 at 1f8e1fdf650>
+2025-03-03 23:21:16,772 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,772 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2d78 at 1f8e1fdf350>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2dd0 at 1f8e1fdf650>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2e28 at 1f8e1fdf350>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2e80 at 1f8e1fdf650>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2ed8 at 1f8e1fdf350>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2f30 at 1f8e1fdf650>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2f88 at 1f8e1fdf350>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2fe0 at 1f8e1fdf650>
+2025-03-03 23:21:16,773 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,777 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3038 at 1f8e1fdf350>
+2025-03-03 23:21:16,777 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,777 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3090 at 1f8e1fdf650>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e30e8 at 1f8e1fdf350>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3140 at 1f8e1fdf650>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3198 at 1f8e1fdf350>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e31f0 at 1f8e1fdf650>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3248 at 1f8e1fdf350>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e32a0 at 1f8e1fdf650>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e32f8 at 1f8e1fdf350>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3350 at 1f8e1fdf650>
+2025-03-03 23:21:16,778 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e33a8 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3400 at 1f8e1fdf650>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3458 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e34b0 at 1f8e1fdf650>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3508 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3560 at 1f8e1fdf650>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e35b8 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3610 at 1f8e1fdf650>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3668 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,783 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e36c0 at 1f8e1fdf650>
+2025-03-03 23:21:16,786 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,786 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3718 at 1f8e1fdf350>
+2025-03-03 23:21:16,786 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe0d0>
+2025-03-03 23:21:16,786 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3820 at 1f8e21fe6d0>
+2025-03-03 23:21:16,786 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1bf0 at 1f8e21fe250>
+2025-03-03 23:21:16,787 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e37c8 at 1f8e21fcdd0>
+2025-03-03 23:21:16,787 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,787 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3770 at 1f8e1fdf650>
+2025-03-03 23:21:16,787 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3820 at 1f8e1fdf350>
+2025-03-03 23:21:16,787 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3878 at 1f8e1fdf650>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e11f8 at 1f8e21fe050>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1c48 at 1f8e21ff750>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e21ff750>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e21fe950>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1cf8 at 1f8e21fe6d0>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e23d8 at 1f8e21ff150>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0a68 at 1f8e21fe150>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0ee0 at 1f8e21fe1d0>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2538 at 1f8e21febd0>
+2025-03-03 23:21:16,790 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3820 at 1f8e21fdbd0>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fcdd0>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3928 at 1f8e21fed50>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e38d0 at 1f8e1fdf350>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3980 at 1f8e1fdf650>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1cf8 at 1f8e21fd650>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fed50>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3a30 at 1f8e21fd250>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e39d8 at 1f8e1fdf350>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3a88 at 1f8e1fdf650>
+2025-03-03 23:21:16,792 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3ae0 at 1f8e1fdf350>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3b38 at 1f8e1fdf650>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3b90 at 1f8e1fdf350>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3be8 at 1f8e1fdf650>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3c40 at 1f8e1fdf350>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3c98 at 1f8e1fdf650>
+2025-03-03 23:21:16,794 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,797 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3cf0 at 1f8e1fdf350>
+2025-03-03 23:21:16,797 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,797 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3d48 at 1f8e1fdf650>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3da0 at 1f8e1fdf350>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3df8 at 1f8e1fdf650>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3e50 at 1f8e1fdf350>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3ea8 at 1f8e1fdf650>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,798 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3f00 at 1f8e1fdf350>
+2025-03-03 23:21:16,800 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,800 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3f58 at 1f8e1fdf650>
+2025-03-03 23:21:16,800 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,800 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3fb0 at 1f8e1fdf350>
+2025-03-03 23:21:16,800 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,800 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4008 at 1f8e1fdf650>
+2025-03-03 23:21:16,800 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,800 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4060 at 1f8e1fdf350>
+2025-03-03 23:21:16,802 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e21fe1d0>
+2025-03-03 23:21:16,802 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4110 at 1f8e21fed50>
+2025-03-03 23:21:16,802 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,802 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e40b8 at 1f8e1fdf650>
+2025-03-03 23:21:16,802 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e21fedd0>
+2025-03-03 23:21:16,802 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd0d0>
+2025-03-03 23:21:16,802 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ffe50>
+2025-03-03 23:21:16,802 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ffb50>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4320 at 1f8e21ff950>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fefd0>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff350>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e42c8 at 1f8e21ff0d0>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe150>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4270 at 1f8e21feed0>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff0d0>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4378 at 1f8e21fd0d0>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fc450>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e43d0 at 1f8e21fe0d0>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4378 at 1f8e21ff850>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e43d0 at 1f8e21feed0>
+2025-03-03 23:21:16,804 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4378 at 1f8e21ff6d0>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e43d0 at 1f8e21fe0d0>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4218 at 1f8e21fe050>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd7d0>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e41c0 at 1f8e21fe6d0>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4168 at 1f8e1fdf350>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e41c0 at 1f8e1fdf650>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4218 at 1f8e1fdf350>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4270 at 1f8e1fdf650>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e42c8 at 1f8e1fdf350>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4320 at 1f8e1fdf650>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4378 at 1f8e1fdf350>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e43d0 at 1f8e1fdf650>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0280 at 1f8e21ff850>
+2025-03-03 23:21:16,808 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e44d8 at 1f8e21ff950>
+2025-03-03 23:21:16,810 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e44d8 at 1f8e21ff3d0>
+2025-03-03 23:21:16,810 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e21fd650>
+2025-03-03 23:21:16,810 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe8d0>
+2025-03-03 23:21:16,810 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd650>
+2025-03-03 23:21:16,810 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4530 at 1f8e21fd0d0>
+2025-03-03 23:21:16,810 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e44d8 at 1f8e21fea50>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4480 at 1f8e222ce50>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222cf50>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222cc50>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222cfd0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222cc50>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4270 at 1f8e222d050>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e44d8 at 1f8e222c550>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222cd50>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222c150>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4588 at 1f8e222c9d0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222c1d0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e21ffcd0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fefd0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4588 at 1f8e21ffad0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e44d8 at 1f8e21fc450>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd7d0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4480 at 1f8e21feed0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4428 at 1f8e1fdf350>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4480 at 1f8e1fdf650>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e44d8 at 1f8e1fdf350>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4530 at 1f8e1fdf650>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4588 at 1f8e1fdf350>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e1fdf650>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fd0d0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e21fe1d0>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,812 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4638 at 1f8e1fdf350>
+2025-03-03 23:21:16,818 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e21ffdd0>
+2025-03-03 23:21:16,818 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e21fee50>
+2025-03-03 23:21:16,818 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e21fe950>
+2025-03-03 23:21:16,818 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fc450>
+2025-03-03 23:21:16,818 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e21ffad0>
+2025-03-03 23:21:16,818 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e21fedd0>
+2025-03-03 23:21:16,818 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e21ff3d0>
+2025-03-03 23:21:16,820 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e21ffdd0>
+2025-03-03 23:21:16,822 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4740 at 1f8e21ff0d0>
+2025-03-03 23:21:16,822 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd0d0>
+2025-03-03 23:21:16,824 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e46e8 at 1f8e21ff450>
+2025-03-03 23:21:16,824 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,824 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4690 at 1f8e1fdf650>
+2025-03-03 23:21:16,824 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e46e8 at 1f8e1fdf350>
+2025-03-03 23:21:16,824 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4740 at 1f8e1fdf650>
+2025-03-03 23:21:16,824 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222d350>
+2025-03-03 23:21:16,824 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fff50>
+2025-03-03 23:21:16,824 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d2d0>
+2025-03-03 23:21:16,826 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222cb50>
+2025-03-03 23:21:16,826 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4950 at 1f8e222cd50>
+2025-03-03 23:21:16,826 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c2d0>
+2025-03-03 23:21:16,826 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d2d0>
+2025-03-03 23:21:16,826 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222d350>
+2025-03-03 23:21:16,826 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222cfd0>
+2025-03-03 23:21:16,826 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48a0 at 1f8e222cd50>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222c050>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222cb50>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222d350>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222cc50>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222d2d0>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222cb50>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222c050>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e222d150>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d3d0>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c450>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4a58 at 1f8e222ced0>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4a58 at 1f8e222dd50>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4a58 at 1f8e222c950>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222c450>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ccd0>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c0d0>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4a00 at 1f8e222cd50>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48a0 at 1f8e222c0d0>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48f8 at 1f8e21ffe50>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff150>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e21ffa50>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c2d0>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d050>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e222d2d0>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48a0 at 1f8e21fd9d0>
+2025-03-03 23:21:16,828 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ffdd0>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4848 at 1f8e21ff3d0>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4848 at 1f8e222d2d0>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222d2d0>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e21ffc50>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4848 at 1f8e21ff0d0>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd0d0>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e47f0 at 1f8e21fee50>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4798 at 1f8e1fdf350>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e47f0 at 1f8e1fdf650>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4848 at 1f8e1fdf350>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48a0 at 1f8e1fdf650>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48f8 at 1f8e1fdf350>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4950 at 1f8e1fdf650>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e49a8 at 1f8e1fdf350>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4a00 at 1f8e1fdf650>
+2025-03-03 23:21:16,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4a58 at 1f8e1fdf350>
+2025-03-03 23:21:16,837 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e1fdf650>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4588 at 1f8e21ff550>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4b08 at 1f8e1fdf350>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0c78 at 1f8e21fedd0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4218 at 1f8e222cd50>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4270 at 1f8e222c4d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4378 at 1f8e222d2d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e43d0 at 1f8e222cd50>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4378 at 1f8e222cd50>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e43d0 at 1f8e222c4d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4378 at 1f8e222d450>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e43d0 at 1f8e222c0d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e21ffad0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff0d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4378 at 1f8e222ccd0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e43d0 at 1f8e222c1d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c3d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c0d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4c68 at 1f8e222c4d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c1d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c050>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4cc0 at 1f8e222cd50>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4c10 at 1f8e21ffcd0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fefd0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4bb8 at 1f8e21fc450>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4c68 at 1f8e222c4d0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e21ffcd0>
+2025-03-03 23:21:16,838 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fedd0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d18 at 1f8e21ff3d0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222cd50>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222c150>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e21ffc50>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fc450>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d70 at 1f8e21fefd0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c1d0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ed0 at 1f8e222c050>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c9d0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4e78 at 1f8e222d350>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222c1d0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e222c6d0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4e78 at 1f8e222d1d0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c850>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c5d0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4f28 at 1f8e222ccd0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d2d0>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c050>
+2025-03-03 23:21:16,845 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4f80 at 1f8e222ced0>
+2025-03-03 23:21:16,849 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4f80 at 1f8e222d450>
+2025-03-03 23:21:16,849 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222c1d0>
+2025-03-03 23:21:16,849 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e222c050>
+2025-03-03 23:21:16,849 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4848 at 1f8e21ffcd0>
+2025-03-03 23:21:16,849 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ffc50>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4e20 at 1f8e21fff50>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff3d0>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4dc8 at 1f8e21fedd0>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4b60 at 1f8e1fdf650>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4bb8 at 1f8e1fdf350>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4c10 at 1f8e1fdf650>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4c68 at 1f8e1fdf350>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4cc0 at 1f8e1fdf650>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d18 at 1f8e1fdf350>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d70 at 1f8e1fdf650>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4dc8 at 1f8e1fdf350>
+2025-03-03 23:21:16,851 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4e20 at 1f8e1fdf650>
+2025-03-03 23:21:16,854 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4e78 at 1f8e1fdf350>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ed0 at 1f8e1fdf650>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4f28 at 1f8e1fdf350>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4f80 at 1f8e1fdf650>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0c78 at 1f8e21ff0d0>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4bb8 at 1f8e21ffc50>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d18 at 1f8e21ffcd0>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d70 at 1f8e21ffdd0>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4dc8 at 1f8e21ff0d0>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4fd8 at 1f8e1fdf350>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48a0 at 1f8e222c1d0>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222c050>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e222c4d0>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48a0 at 1f8e222c2d0>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c050>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e50e0 at 1f8e222db50>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222c050>
+2025-03-03 23:21:16,855 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e222ced0>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4848 at 1f8e222d450>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ffdd0>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5088 at 1f8e21fd9d0>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5030 at 1f8e1fdf650>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5088 at 1f8e1fdf350>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e50e0 at 1f8e1fdf650>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0070 at 1f8e21fff50>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222d2d0>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4848 at 1f8e222c850>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222c850>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222c2d0>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48a0 at 1f8e222c2d0>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c8d0>
+2025-03-03 23:21:16,859 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e51e8 at 1f8e222dbd0>
+2025-03-03 23:21:16,862 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222de50>
+2025-03-03 23:21:16,862 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222cf50>
+2025-03-03 23:21:16,862 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5190 at 1f8e222d1d0>
+2025-03-03 23:21:16,862 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ced0>
+2025-03-03 23:21:16,862 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5240 at 1f8e222d450>
+2025-03-03 23:21:16,862 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5240 at 1f8e222ced0>
+2025-03-03 23:21:16,862 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d650>
+2025-03-03 23:21:16,862 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5298 at 1f8e222c850>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5298 at 1f8e222d650>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4270 at 1f8e222d650>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4bb8 at 1f8e222c150>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ffdd0>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5138 at 1f8e21fe8d0>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222d050>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ffdd0>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e52f0 at 1f8e21fff50>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0f38 at 1f8e21fe8d0>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0018 at 1f8e1fdf350>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5138 at 1f8e1fdf650>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5190 at 1f8e1fdf350>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e51e8 at 1f8e1fdf650>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5240 at 1f8e1fdf350>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5298 at 1f8e1fdf650>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e52f0 at 1f8e1fdf350>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e11f8 at 1f8e222d450>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222e1d0>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d2d0>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222e150>
+2025-03-03 23:21:16,864 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222e0d0>
+2025-03-03 23:21:16,869 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222df50>
+2025-03-03 23:21:16,869 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4848 at 1f8e222e0d0>
+2025-03-03 23:21:16,869 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53a0 at 1f8e222df50>
+2025-03-03 23:21:16,869 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222e0d0>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e45e0 at 1f8e222e0d0>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e650>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e54a8 at 1f8e222f0d0>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e54a8 at 1f8e222e150>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4f28 at 1f8e222ea50>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222ef50>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e2d0>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e850>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5500 at 1f8e222ec50>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e6d0>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e55b0 at 1f8e222e850>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222df50>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5558 at 1f8e222e0d0>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222da50>
+2025-03-03 23:21:16,870 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e222c8d0>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4270 at 1f8e222dc50>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e56b8 at 1f8e22c03d0>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e56b8 at 1f8e22c0250>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ff50>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222fbd0>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e56b8 at 1f8e222f950>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c0e50>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c0b50>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e57c0 at 1f8e22c0a50>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c0850>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c05d0>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5768 at 1f8e22c0550>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5710 at 1f8e22c05d0>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5710 at 1f8e22c02d0>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c0250>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222fed0>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5710 at 1f8e222fbd0>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c0050>
+2025-03-03 23:21:16,874 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222fad0>
+2025-03-03 23:21:16,878 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5818 at 1f8e222f750>
+2025-03-03 23:21:16,878 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c0350>
+2025-03-03 23:21:16,878 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222fcd0>
+2025-03-03 23:21:16,878 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5870 at 1f8e222fbd0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222fbd0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c0550>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222fcd0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e58c8 at 1f8e222f8d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f750>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5920 at 1f8e222f8d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f050>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f350>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5660 at 1f8e222f7d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222fad0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f250>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5978 at 1f8e222f9d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222ea50>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222eb50>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5608 at 1f8e222c8d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5450 at 1f8e222d550>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ddd0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53f8 at 1f8e222ced0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f3d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5a80 at 1f8e222e850>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f150>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f4d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b30 at 1f8e222e550>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e7d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ad8 at 1f8e222f3d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ad8 at 1f8e222e6d0>
+2025-03-03 23:21:16,879 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222eed0>
+2025-03-03 23:21:16,884 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d850>
+2025-03-03 23:21:16,884 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53a0 at 1f8e222e350>
+2025-03-03 23:21:16,884 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e6d0>
+2025-03-03 23:21:16,884 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b88 at 1f8e222de50>
+2025-03-03 23:21:16,884 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222e7d0>
+2025-03-03 23:21:16,884 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b88 at 1f8e222d850>
+2025-03-03 23:21:16,884 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b88 at 1f8e222e850>
+2025-03-03 23:21:16,884 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ef50>
+2025-03-03 23:21:16,886 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e350>
+2025-03-03 23:21:16,886 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5be0 at 1f8e222ec50>
+2025-03-03 23:21:16,886 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b88 at 1f8e222de50>
+2025-03-03 23:21:16,887 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222e1d0>
+2025-03-03 23:21:16,888 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b88 at 1f8e222e1d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e150>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5c38 at 1f8e222e850>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5c38 at 1f8e222e7d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b88 at 1f8e222e6d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5c38 at 1f8e222ec50>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f1d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ea50>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ce8 at 1f8e222e350>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e2d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5c90 at 1f8e222ee50>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5c90 at 1f8e222d850>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f7d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5d40 at 1f8e222eb50>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e9d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5d98 at 1f8e222de50>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e48a0 at 1f8e222e9d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5d98 at 1f8e222e7d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5a28 at 1f8e222d550>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d750>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e59d0 at 1f8e222d950>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222da50>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5e48 at 1f8e222d550>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d850>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d7d0>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5df0 at 1f8e222db50>
+2025-03-03 23:21:16,889 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d650>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ea0 at 1f8e222c1d0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222c6d0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e222ced0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ea0 at 1f8e222c8d0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222d750>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e222c050>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e850>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222cf50>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ef8 at 1f8e222ddd0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4a58 at 1f8e222e2d0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e350>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222eb50>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5fa8 at 1f8e222f7d0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5608 at 1f8e222f750>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5608 at 1f8e222ea50>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e350>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06088 at 1f8e222e150>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4848 at 1f8e222ee50>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ef8 at 1f8e222f4d0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e222f4d0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4ab0 at 1f8e222e950>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53a0 at 1f8e222f0d0>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5608 at 1f8e222e850>
+2025-03-03 23:21:16,894 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222cf50>
+2025-03-03 23:21:16,899 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5f50 at 1f8e222d7d0>
+2025-03-03 23:21:16,899 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c850>
+2025-03-03 23:21:16,899 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06748 at 1f8e222c8d0>
+2025-03-03 23:21:16,899 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e43d0 at 1f8e222ced0>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5138 at 1f8e222e7d0>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5138 at 1f8e222f150>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e7d0>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06fe8 at 1f8e222ced0>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06fe8 at 1f8e222c850>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4bb8 at 1f8e222d050>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d350>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53a0 at 1f8e222c0d0>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d850>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06aa8 at 1f8e222e450>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222d750>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d450>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06808 at 1f8e222c9d0>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e52f0 at 1f8e222d350>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2640 at 1f8e222cd50>
+2025-03-03 23:21:16,900 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,903 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5348 at 1f8e1fdf650>
+2025-03-03 23:21:16,904 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53a0 at 1f8e1fdf350>
+2025-03-03 23:21:16,904 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53f8 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5450 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e54a8 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5500 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5558 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e55b0 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5608 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5660 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e56b8 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5710 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5768 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e57c0 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5818 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5870 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e58c8 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5920 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5978 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e59d0 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5a28 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5a80 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ad8 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b30 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b88 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5be0 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5c38 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5c90 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ce8 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5d40 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5d98 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5df0 at 1f8e1fdf350>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5e48 at 1f8e1fdf650>
+2025-03-03 23:21:16,905 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ea0 at 1f8e1fdf350>
+2025-03-03 23:21:16,910 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5ef8 at 1f8e1fdf650>
+2025-03-03 23:21:16,910 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5f50 at 1f8e1fdf350>
+2025-03-03 23:21:16,910 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5fa8 at 1f8e1fdf650>
+2025-03-03 23:21:16,910 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06088 at 1f8e1fdf350>
+2025-03-03 23:21:16,910 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06748 at 1f8e1fdf650>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06fe8 at 1f8e1fdf350>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06808 at 1f8e1fdf650>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06aa8 at 1f8e1fdf350>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1040 at 1f8e222e450>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53f8 at 1f8e222d7d0>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5608 at 1f8e222d850>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222d750>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d350>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06448 at 1f8e222c150>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d050>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd068c8 at 1f8e222d850>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd068c8 at 1f8e222f050>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222e9d0>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e2d0>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07168 at 1f8e222c1d0>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07168 at 1f8e222c8d0>
+2025-03-03 23:21:16,911 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07168 at 1f8e222c2d0>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222de50>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d7d0>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06508 at 1f8e222e450>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222f150>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c150>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd05f68 at 1f8e222d350>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07228 at 1f8e1fdf650>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06448 at 1f8e1fdf350>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06508 at 1f8e1fdf650>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd068c8 at 1f8e1fdf350>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07168 at 1f8e1fdf650>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd05f68 at 1f8e1fdf350>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1040 at 1f8e222c8d0>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53f8 at 1f8e222d750>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06448 at 1f8e222e7d0>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06508 at 1f8e222c9d0>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd05f68 at 1f8e222c8d0>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06988 at 1f8e1fdf650>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e27a0 at 1f8e222ec50>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06c88 at 1f8e222ff50>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f6d0>
+2025-03-03 23:21:16,915 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd071c8 at 1f8e222ff50>
+2025-03-03 23:21:16,919 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f850>
+2025-03-03 23:21:16,919 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06ce8 at 1f8e222f250>
+2025-03-03 23:21:16,919 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222fbd0>
+2025-03-03 23:21:16,919 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d1d0>
+2025-03-03 23:21:16,920 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06c88 at 1f8e222e350>
+2025-03-03 23:21:16,920 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222da50>
+2025-03-03 23:21:16,920 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f7d0>
+2025-03-03 23:21:16,920 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06b68 at 1f8e222cf50>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06ce8 at 1f8e222d050>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06ce8 at 1f8e222f4d0>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd060e8 at 1f8e222f850>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ff50>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06d48 at 1f8e222f850>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06c88 at 1f8e222ff50>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ea50>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f350>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd060e8 at 1f8e222f750>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e9d0>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f050>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07348 at 1f8e222c050>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07348 at 1f8e222e2d0>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222eb50>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c9d0>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07468 at 1f8e222e0d0>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e52f0 at 1f8e222e7d0>
+2025-03-03 23:21:16,922 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06a48 at 1f8e1fdf350>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07468 at 1f8e1fdf650>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06b68 at 1f8e1fdf350>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06c88 at 1f8e1fdf650>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd071c8 at 1f8e1fdf350>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06ce8 at 1f8e1fdf650>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07348 at 1f8e1fdf350>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd060e8 at 1f8e1fdf650>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06d48 at 1f8e1fdf350>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e27a0 at 1f8e222cfd0>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07468 at 1f8e222d050>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d70 at 1f8e222e2d0>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e52f0 at 1f8e222c9d0>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,925 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07288 at 1f8e1fdf650>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07468 at 1f8e222e650>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d70 at 1f8e222eb50>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd074c8 at 1f8e1fdf350>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222eed0>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07588 at 1f8e222da50>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07588 at 1f8e222d550>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06e08 at 1f8e22c09d0>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07588 at 1f8e22c09d0>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222fcd0>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f5d0>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06e08 at 1f8e222ff50>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f350>
+2025-03-03 23:21:16,927 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e1d0>
+2025-03-03 23:21:16,930 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd05fc8 at 1f8e222c050>
+2025-03-03 23:21:16,930 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07348 at 1f8e222e9d0>
+2025-03-03 23:21:16,930 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07348 at 1f8e222ef50>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd05fc8 at 1f8e222da50>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd05fc8 at 1f8e222f750>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222e8d0>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222cf50>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06da8 at 1f8e222e950>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d70 at 1f8e222de50>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07528 at 1f8e1fdf650>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06da8 at 1f8e1fdf350>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07588 at 1f8e1fdf650>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd05fc8 at 1f8e1fdf350>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06e08 at 1f8e1fdf650>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e40b8 at 1f8e222d1d0>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4d70 at 1f8e222e8d0>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e950>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd070a8 at 1f8e222e9d0>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e52f0 at 1f8e222cf50>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07048 at 1f8e1fdf350>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd070a8 at 1f8e1fdf650>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222e8d0>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e9d0>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06028 at 1f8e222c050>
+2025-03-03 23:21:16,931 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,935 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd061a8 at 1f8e1fdf350>
+2025-03-03 23:21:16,935 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06028 at 1f8e1fdf650>
+2025-03-03 23:21:16,935 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd070a8 at 1f8e222da50>
+2025-03-03 23:21:16,936 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,936 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06148 at 1f8e1fdf350>
+2025-03-03 23:21:16,936 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e1a90 at 1f8e222ef50>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06208 at 1f8e1fdf650>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e39d8 at 1f8e222e1d0>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06268 at 1f8e1fdf350>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e06a0 at 1f8e222f6d0>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd062c8 at 1f8e1fdf650>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e07a8 at 1f8e222ee50>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06328 at 1f8e1fdf350>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e11f8 at 1f8e222f250>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e53a0 at 1f8e222fad0>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06808 at 1f8e222f350>
+2025-03-03 23:21:16,937 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e52f0 at 1f8e222f2d0>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e2640 at 1f8e222f250>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd06388 at 1f8e1fdf650>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0b18 at 1f8e222ea50>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5088 at 1f8e222f850>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08068 at 1f8e1fdf350>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0960 at 1f8e222fbd0>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5088 at 1f8e222f1d0>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd080c8 at 1f8e1fdf650>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0a68 at 1f8e222fa50>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5088 at 1f8e222fed0>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08188 at 1f8e1fdf350>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e3820 at 1f8e22c05d0>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e58c8 at 1f8e22c02d0>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5f50 at 1f8e222fa50>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd07ca8 at 1f8e1fdf650>
+2025-03-03 23:21:16,940 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c07d0>
+2025-03-03 23:21:16,944 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c0750>
+2025-03-03 23:21:16,944 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd085a8 at 1f8e22c04d0>
+2025-03-03 23:21:16,944 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b88 at 1f8e22c04d0>
+2025-03-03 23:21:16,944 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5be0 at 1f8e22c0750>
+2025-03-03 23:21:16,944 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e5b88 at 1f8e222f350>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e22c0ed0>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08ba8 at 1f8e22c0650>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c08d0>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08728 at 1f8e22c0450>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e4270 at 1f8e22c16d0>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e22c1350>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c0f50>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08608 at 1f8e22c0050>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08608 at 1f8e22c1550>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c1050>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08c08 at 1f8e22c0b50>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e22c1050>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08668 at 1f8e22c1fd0>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e22c12d0>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c14d0>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08668 at 1f8e22c0f50>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e22c0cd0>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e22c06d0>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08c68 at 1f8e22c09d0>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e222fa50>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf650>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08248 at 1f8e1fdf350>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd085a8 at 1f8e1fdf650>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08728 at 1f8e1fdf350>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08c68 at 1f8e1fdf650>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08608 at 1f8e1fdf350>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08c08 at 1f8e1fdf650>
+2025-03-03 23:21:16,945 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8dbd08668 at 1f8e1fdf350>
+2025-03-03 23:21:16,960 - DEBUG - filename: "C:\WINDOWS\System32\Speech\Common\sapi.dll": tlib_mtime: 1738222187.1130993
+2025-03-03 23:21:16,971 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf350>
+2025-03-03 23:21:16,971 - INFO - # Generating comtypes.gen.SpeechLib
+2025-03-03 23:21:16,978 - DEBUG - GetModule(TLIBATTR(GUID={00020430-0000-0000-C000-000000000046}, Version=2.0, LCID=0, FLags=0x8))
+2025-03-03 23:21:16,982 - INFO - Could not import comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0: Typelib different than module
+2025-03-03 23:21:16,982 - INFO - # Generating comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0
+2025-03-03 23:21:16,982 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0f50>
+2025-03-03 23:21:16,986 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:16,987 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e22c0fd0>
+2025-03-03 23:21:16,987 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0650>
+2025-03-03 23:21:16,987 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:16,987 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95a00 at 1f8e22c0c50>
+2025-03-03 23:21:16,987 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1450>
+2025-03-03 23:21:16,990 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:16,990 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95a58 at 1f8e22c0b50>
+2025-03-03 23:21:16,991 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e22c1350>
+2025-03-03 23:21:16,991 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:16,991 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e22c1050>
+2025-03-03 23:21:16,991 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e22c1950>
+2025-03-03 23:21:16,991 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb959a8 at 1f8e22c0d50>
+2025-03-03 23:21:16,991 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95a00 at 1f8e22c1550>
+2025-03-03 23:21:16,991 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95a58 at 1f8e22c1950>
+2025-03-03 23:21:16,991 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e22c0050>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e22c0fd0>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95ab0 at 1f8e22c12d0>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e22c0cd0>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95ab0 at 1f8e22c0c50>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95b08 at 1f8e22c0b50>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95b60 at 1f8e22c1050>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95bb8 at 1f8e22c0fd0>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95c10 at 1f8e22c0c50>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:16,995 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95c68 at 1f8e22c0b50>
+2025-03-03 23:21:17,000 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:17,000 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95cc0 at 1f8e22c1050>
+2025-03-03 23:21:17,000 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:17,000 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95d18 at 1f8e22c0fd0>
+2025-03-03 23:21:17,000 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:17,000 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95d70 at 1f8e22c0c50>
+2025-03-03 23:21:17,000 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:17,003 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95dc8 at 1f8e22c0b50>
+2025-03-03 23:21:17,003 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:17,003 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95e20 at 1f8e22c1050>
+2025-03-03 23:21:17,004 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:17,004 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95e78 at 1f8e22c0fd0>
+2025-03-03 23:21:17,004 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:17,005 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95ed0 at 1f8e22c0c50>
+2025-03-03 23:21:17,005 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f28 at 1f8e22c0b50>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c1050>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95fd8 at 1f8e22c0fd0>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96030 at 1f8e22c0c50>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96088 at 1f8e22c0b50>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb960e0 at 1f8e22c1050>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96138 at 1f8e22c0fd0>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96190 at 1f8e22c0c50>
+2025-03-03 23:21:17,006 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb961e8 at 1f8e22c0b50>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96240 at 1f8e22c1050>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96298 at 1f8e22c0fd0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb962f0 at 1f8e22c0c50>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c15d0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96348 at 1f8e22c11d0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96348 at 1f8e22c11d0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c15d0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c12d0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e22c1550>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96348 at 1f8e22c0b50>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e22c1650>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb963a0 at 1f8e22c1050>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb963a0 at 1f8e22c12d0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb963f8 at 1f8e22c0fd0>
+2025-03-03 23:21:17,011 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb963a0 at 1f8e22c1550>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e22c15d0>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1450>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb964a8 at 1f8e22c0cd0>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96348 at 1f8e22c1650>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96450 at 1f8e22c0c50>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c1950>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c1ad0>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95d70 at 1f8e22c0050>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95dc8 at 1f8e22c18d0>
+2025-03-03 23:21:17,016 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95cc0 at 1f8e22c11d0>
+2025-03-03 23:21:17,019 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95d18 at 1f8e22c1dd0>
+2025-03-03 23:21:17,019 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95d70 at 1f8e22c18d0>
+2025-03-03 23:21:17,019 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95dc8 at 1f8e22c1ad0>
+2025-03-03 23:21:17,019 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c1450>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c1cd0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c11d0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95950 at 1f8e22c0cd0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96500 at 1f8e22c0b50>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c1cd0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95f80 at 1f8e22c0d50>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95d70 at 1f8e22c0ed0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95dc8 at 1f8e22c0650>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95cc0 at 1f8e22c1bd0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95d18 at 1f8e22c0cd0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95d70 at 1f8e22c1450>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb95dc8 at 1f8e22c18d0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb958f8 at 1f8e22c1950>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96558 at 1f8e22c1050>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96558 at 1f8e22c1550>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb965b0 at 1f8e22c0fd0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96558 at 1f8e22c0650>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96500 at 1f8e22c0d50>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1050>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96608 at 1f8e22c0c50>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0fd0>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96660 at 1f8e22c0b50>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0c50>
+2025-03-03 23:21:17,021 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb966b8 at 1f8e22c1050>
+2025-03-03 23:21:17,027 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb964a8 at 1f8e22c0fd0>
+2025-03-03 23:21:17,027 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb964a8 at 1f8e22c0650>
+2025-03-03 23:21:17,027 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0b50>
+2025-03-03 23:21:17,027 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8ddb96710 at 1f8e22c0dd0>
+2025-03-03 23:21:17,027 - DEBUG - filename: "C:\Windows\System32\stdole2.tlb": tlib_mtime: 1711956124.7159297
+2025-03-03 23:21:17,027 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c0dd0>
+2025-03-03 23:21:17,027 - INFO - # Generating comtypes.gen.stdole
+2025-03-03 23:21:17,103 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1bd0>
+2025-03-03 23:21:17,104 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06eb980 at 1f8e22c1150>
+2025-03-03 23:21:17,321 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f1d0>
+2025-03-03 23:21:17,321 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f850>
+2025-03-03 23:21:17,321 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f250>
+2025-03-03 23:21:17,321 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ee50>
+2025-03-03 23:21:17,321 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f6d0>
+2025-03-03 23:21:17,336 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e1d0>
+2025-03-03 23:21:17,337 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222ef50>
+2025-03-03 23:21:17,337 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222da50>
+2025-03-03 23:21:17,337 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c050>
+2025-03-03 23:21:17,337 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222cf50>
+2025-03-03 23:21:17,337 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222de50>
+2025-03-03 23:21:17,337 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222eb50>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c9d0>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222e7d0>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222c8d0>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d350>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222cd50>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe8d0>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fd9d0>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff0d0>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fedd0>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff550>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fee50>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff450>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe1d0>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21feed0>
+2025-03-03 23:21:17,340 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21fe6d0>
+2025-03-03 23:21:17,344 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21febd0>
+2025-03-03 23:21:17,344 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-03-03 23:21:17,344 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x1f8bba692a0 at 1f8e22c0350>
+2025-03-03 23:21:17,344 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x1f8bba692c0 at 1f8e1fded50>
+2025-03-03 23:21:17,344 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0018 at 1f8e1fdee50>
+2025-03-03 23:21:17,344 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0070 at 1f8e1fdefd0>
+2025-03-03 23:21:17,344 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e1fdf1d0>
+2025-03-03 23:21:17,344 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8bba69260 at 1f8e1fdedd0>
+2025-03-03 23:21:17,358 - DEBUG - SAPI.SpFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2025-03-03 23:21:17,358 - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2025-03-03 23:21:17,361 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x1f8bba69be0 at 1f8e22c0750>)
+2025-03-03 23:21:17,361 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-03-03 23:21:17,361 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-03-03 23:21:17,361 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8e08e0960 at 1f8e222cd50>
+2025-03-03 23:21:17,361 - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2025-03-03 23:21:17,361 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8bba69be0 at 1f8e222d7d0>
+2025-03-03 23:21:17,361 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:21:17,361 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2025-03-03 23:21:17,361 - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x1f8bba69be0 at 1f8e222cd50>
+2025-03-03 23:21:17,364 - DEBUG - Release <POINTER(IDispatch) ptr=0x1f8bba69be0 at 1f8e222d450>
+2025-03-03 23:21:17,364 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0960 at 1f8e222e450>
+2025-03-03 23:21:17,364 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222d7d0>
+2025-03-03 23:21:17,364 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8bba69be0 at 1f8e22c0750>
+2025-03-03 23:21:17,471 - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-03-03 23:21:17,471 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-03-03 23:21:17,471 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x1f8bba6a330 at 1f8e222e0d0>)
+2025-03-03 23:21:17,471 - DEBUG - Does implement IProvideClassInfo
+2025-03-03 23:21:17,471 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-03-03 23:21:17,471 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8bba6a370 at 1f8e222f4d0>
+2025-03-03 23:21:17,471 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:21:17,471 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-03-03 23:21:17,471 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x1f8bba6a370 at 1f8e222c6d0>
+2025-03-03 23:21:17,471 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x1f8bba6a390 at 1f8e222e2d0>
+2025-03-03 23:21:17,471 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0018 at 1f8e222cfd0>
+2025-03-03 23:21:17,471 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e0070 at 1f8e222d050>
+2025-03-03 23:21:17,471 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e222f4d0>
+2025-03-03 23:21:17,471 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8bba6a330 at 1f8e222e0d0>
+2025-03-03 23:21:17,471 - DEBUG - <POINTER(ISpeechVoice) ptr=0x1f8bba6a370 at 1f8e222c6d0> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-03-03 23:21:17,471 - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x1f8bba6a390 at 1f8e222e0d0>
+2025-03-03 23:21:17,471 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>: _ISpeechVoiceEvents.VoiceChange not implemented
+2025-03-03 23:21:17,471 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>: _ISpeechVoiceEvents.Bookmark not implemented
+2025-03-03 23:21:17,471 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>: _ISpeechVoiceEvents.Sentence not implemented
+2025-03-03 23:21:17,471 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>: _ISpeechVoiceEvents.Phoneme not implemented
+2025-03-03 23:21:17,483 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>: _ISpeechVoiceEvents.Viseme not implemented
+2025-03-03 23:21:17,483 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>: _ISpeechVoiceEvents.AudioLevel not implemented
+2025-03-03 23:21:17,483 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2025-03-03 23:21:17,483 - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-03-03 23:21:17,484 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2025-03-03 23:21:17,484 - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>
+2025-03-03 23:21:17,484 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>.AddRef() -> 1
+2025-03-03 23:21:17,488 - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x1f8bba6a398 at 1f8e21fed50>
+2025-03-03 23:21:17,709 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x1f8bba6ad60 at 1f8e21fed50>)
+2025-03-03 23:21:17,709 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x1f8bba6ad60 at 1f8e21fed50>
+2025-03-03 23:21:17,709 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x1f8e4aa5410 at 1f8e21fed50>)
+2025-03-03 23:21:17,709 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8e5945d80 at 1f8e21fe7d0>
+2025-03-03 23:21:17,709 - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x1f8e5901060 at 1f8e21ff050>)
+2025-03-03 23:21:17,709 - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x1f8e5901060 at 1f8e21ff050>)
+2025-03-03 23:21:17,709 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-03-03 23:21:17,709 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-03-03 23:21:17,709 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8e08e01d0 at 1f8e21feed0>
+2025-03-03 23:21:17,709 - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2025-03-03 23:21:17,709 - DEBUG - Release <POINTER(IUnknown) ptr=0x1f8e5901060 at 1f8e21ff6d0>
+2025-03-03 23:21:17,709 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:21:17,709 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2025-03-03 23:21:17,709 - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x1f8e5901060 at 1f8e21feed0>
+2025-03-03 23:21:17,709 - DEBUG - Release <POINTER(IDispatch) ptr=0x1f8e5901060 at 1f8e21fead0>
+2025-03-03 23:21:17,709 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1f8e08e01d0 at 1f8e21fd7d0>
+2025-03-03 23:21:17,709 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1f8e06e7a40 at 1f8e21ff6d0>
+2025-03-03 23:21:17,722 - DEBUG - Release <POINTER(IDispatch) ptr=0x1f8e5901060 at 1f8e21ff050>
+2025-03-03 23:21:17,723 - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x1f8e5945d80 at 1f8e21ff750>
+2025-03-03 23:21:17,724 - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x1f8e4aa5410 at 1f8e21fed50>
+2025-03-03 23:21:17,729 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x1f8e5901060 at 1f8e21feed0>
+2025-03-03 23:21:17,734 - INFO - Starting server on http://192.168.127.91:5000
+2025-03-03 23:21:17,775 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.37.91:5000
+2025-03-03 23:21:17,775 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 23:21:17,788 - INFO -  * Restarting with stat
+2025-03-03 23:21:21,678 - INFO - -- BEGIN Twilio API Request --
+2025-03-03 23:21:21,678 - INFO - GET Request: https://api.twilio.com/2010-04-01/Accounts/AC9dd46c8f6ed175f28d1dfe46207110ff/IncomingPhoneNumbers.json
+2025-03-03 23:21:21,678 - INFO - Headers:
+2025-03-03 23:21:21,678 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-03-03 23:21:21,678 - INFO - Accept : application/json
+2025-03-03 23:21:21,678 - INFO - User-Agent : twilio-python/9.4.1 (Windows AMD64) Python/3.12.8
+2025-03-03 23:21:21,678 - INFO - X-Twilio-Client : python-9.4.1
+2025-03-03 23:21:21,678 - INFO - Accept-Charset : utf-8
+2025-03-03 23:21:21,678 - INFO - -- END Twilio API Request --
+2025-03-03 23:21:22,231 - INFO - Response Status Code: 401
+2025-03-03 23:21:22,237 - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '107', 'Connection': 'keep-alive', 'Date': 'Mon, 03 Mar 2025 17:51:19 GMT', 'X-Twilio-Error-Code': '20003', 'Twilio-Request-Id': 'RQa51efb26e504b9ff599ade656919774a', 'Twilio-Request-Duration': '0.016', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'WWW-Authenticate': 'Basic realm="Twilio API"', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 a29f9f1ff42721dbcda7f3bae04962a0.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'MAA51-P3', 'X-Amz-Cf-Id': 'QpXiVyTIfuTSOfMZQOYXsTmPx2QgGkPYjZwk05Wfm2JIr8i5LW0sJg==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-03-03 23:21:22,237 - ERROR - Error getting verified numbers: ('Unable to fetch page', HTTP 401 {"code":20003,"message":"Authenticate","more_info":"https://www.twilio.com/docs/errors/20003","status":401})
+2025-03-03 23:21:22,289 - INFO - YOLO model loaded successfully. Available classes: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
+2025-03-03 23:21:22,309 - DEBUG - CoInitializeEx(None, 2)
+2025-03-03 23:21:22,363 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\chann\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-03 23:21:22,364 - INFO - Using writeable comtypes cache directory: 'C:\Users\chann\AppData\Local\Programs\Python\Python312\Lib\site-packages\comtypes\gen'
+2025-03-03 23:21:22,425 - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-03-03 23:21:22,425 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-03-03 23:21:22,433 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x18a905876a0 at 18aa0d15a50>)
+2025-03-03 23:21:22,433 - DEBUG - Does implement IProvideClassInfo
+2025-03-03 23:21:22,437 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-03-03 23:21:22,439 - DEBUG - Release <POINTER(IUnknown) ptr=0x18a905876e0 at 18aa0d15e50>
+2025-03-03 23:21:22,439 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:21:22,440 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-03-03 23:21:22,440 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x18a905876e0 at 18aa0d15dd0>
+2025-03-03 23:21:22,440 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x18a90587700 at 18aa0d159d0>
+2025-03-03 23:21:22,440 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x18a9f3af028 at 18aa0d15ad0>
+2025-03-03 23:21:22,440 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x18a9f3af080 at 18aa0d15c50>
+2025-03-03 23:21:22,440 - DEBUG - Release <POINTER(ITypeLib) ptr=0x18a9ec99410 at 18aa0d15e50>
+2025-03-03 23:21:22,440 - DEBUG - Release <POINTER(IUnknown) ptr=0x18a905876a0 at 18aa0d15a50>
+2025-03-03 23:21:22,440 - DEBUG - <POINTER(ISpeechVoice) ptr=0x18a905876e0 at 18aa0d15dd0> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-03-03 23:21:22,440 - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x18a90587700 at 18aa0d15a50>
+2025-03-03 23:21:22,445 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>: _ISpeechVoiceEvents.VoiceChange not implemented
+2025-03-03 23:21:22,445 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>: _ISpeechVoiceEvents.Bookmark not implemented
+2025-03-03 23:21:22,445 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>: _ISpeechVoiceEvents.Sentence not implemented
+2025-03-03 23:21:22,445 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>: _ISpeechVoiceEvents.Phoneme not implemented
+2025-03-03 23:21:22,445 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>: _ISpeechVoiceEvents.Viseme not implemented
+2025-03-03 23:21:22,445 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>: _ISpeechVoiceEvents.AudioLevel not implemented
+2025-03-03 23:21:22,445 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2025-03-03 23:21:22,445 - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-03-03 23:21:22,448 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2025-03-03 23:21:22,448 - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>
+2025-03-03 23:21:22,448 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000018AA0A5AB40>.AddRef() -> 1
+2025-03-03 23:21:22,450 - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x18a90587708 at 18aa0d172d0>
+2025-03-03 23:21:22,496 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x18a90588450 at 18aa0d172d0>)
+2025-03-03 23:21:22,496 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x18a90588450 at 18aa0d172d0>
+2025-03-03 23:21:22,496 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x18aa104b6b0 at 18aa0d172d0>)
+2025-03-03 23:21:22,496 - DEBUG - Release <POINTER(IUnknown) ptr=0x18aa1cf47d0 at 18aa0d17250>
+2025-03-03 23:21:22,496 - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x18aa1cf62c0 at 18aa0d174d0>)
+2025-03-03 23:21:22,496 - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x18aa1cf62c0 at 18aa0d174d0>)
+2025-03-03 23:21:22,496 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-03-03 23:21:22,496 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-03-03 23:21:22,502 - DEBUG - Release <POINTER(IUnknown) ptr=0x18a9f3af130 at 18aa0d176d0>
+2025-03-03 23:21:22,503 - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2025-03-03 23:21:22,503 - DEBUG - Release <POINTER(IUnknown) ptr=0x18aa1cf62c0 at 18aa0d177d0>
+2025-03-03 23:21:22,503 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:21:22,506 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2025-03-03 23:21:22,507 - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x18aa1cf62c0 at 18aa0d176d0>
+2025-03-03 23:21:22,507 - DEBUG - Release <POINTER(IDispatch) ptr=0x18aa1cf62c0 at 18aa0d17650>
+2025-03-03 23:21:22,507 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x18a9f3af130 at 18aa0d17750>
+2025-03-03 23:21:22,507 - DEBUG - Release <POINTER(ITypeLib) ptr=0x18a9ec99410 at 18aa0d177d0>
+2025-03-03 23:21:22,507 - DEBUG - Release <POINTER(IDispatch) ptr=0x18aa1cf62c0 at 18aa0d174d0>
+2025-03-03 23:21:22,507 - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x18aa1cf47d0 at 18aa0d17350>
+2025-03-03 23:21:22,509 - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x18aa104b6b0 at 18aa0d172d0>
+2025-03-03 23:21:22,509 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x18aa1cf62c0 at 18aa0d176d0>
+2025-03-03 23:21:22,509 - INFO - Starting server on http://192.168.127.91:5000
+2025-03-03 23:21:22,559 - WARNING -  * Debugger is active!
+2025-03-03 23:21:22,572 - INFO -  * Debugger PIN: 443-507-888
+2025-03-03 23:24:31,513 - DEBUG - Calling CoUninitialize()
+2025-03-03 23:24:31,518 - DEBUG - CoUninitialize() done.
+2025-03-03 23:24:32,354 - DEBUG - Calling CoUninitialize()
+2025-03-03 23:24:32,354 - DEBUG - CoUninitialize() done.
+2025-03-03 23:24:32,624 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>.Release() -> 0
+2025-03-03 23:24:32,624 - DEBUG - 0 active COM objects: Removed <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001F8E2147AD0>
+2025-03-03 23:24:32,639 - DEBUG - Remaining: []
+2025-03-03 23:24:39,558 - INFO - -- BEGIN Twilio API Request --
+2025-03-03 23:24:39,558 - INFO - GET Request: https://api.twilio.com/2010-04-01/Accounts/AC9dd46c8f6ed175f28d1dfe46207110ff/IncomingPhoneNumbers.json
+2025-03-03 23:24:39,558 - INFO - Headers:
+2025-03-03 23:24:39,558 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-03-03 23:24:39,558 - INFO - Accept : application/json
+2025-03-03 23:24:39,558 - INFO - User-Agent : twilio-python/9.4.1 (Windows AMD64) Python/3.12.8
+2025-03-03 23:24:39,558 - INFO - X-Twilio-Client : python-9.4.1
+2025-03-03 23:24:39,558 - INFO - Accept-Charset : utf-8
+2025-03-03 23:24:39,558 - INFO - -- END Twilio API Request --
+2025-03-03 23:24:40,983 - INFO - Response Status Code: 401
+2025-03-03 23:24:40,983 - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '107', 'Connection': 'keep-alive', 'Date': 'Mon, 03 Mar 2025 17:54:38 GMT', 'X-Twilio-Error-Code': '20003', 'Twilio-Request-Id': 'RQ0fab965993a33bbeb80847b2bd8c7e8b', 'Twilio-Request-Duration': '0.012', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'WWW-Authenticate': 'Basic realm="Twilio API"', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 7466efd38e23df4aeaae0986f151c420.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'MAA51-P3', 'X-Amz-Cf-Id': '0ztWWTdyrpfLpy5rv949CXDDz8-yVS1SQB0zsKta9MHm_oA-QmGOFA==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-03-03 23:24:40,984 - ERROR - Error getting verified numbers: ('Unable to fetch page', HTTP 401 {"code":20003,"message":"Authenticate","more_info":"https://www.twilio.com/docs/errors/20003","status":401})
+2025-03-03 23:24:41,045 - INFO - YOLO model loaded successfully. Available classes: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
+2025-03-03 23:24:41,057 - DEBUG - CoInitializeEx(None, 2)
+2025-03-03 23:24:41,097 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\chann\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-03 23:24:41,097 - INFO - Using writeable comtypes cache directory: 'C:\Users\chann\AppData\Local\Programs\Python\Python312\Lib\site-packages\comtypes\gen'
+2025-03-03 23:24:41,169 - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-03-03 23:24:41,169 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-03-03 23:24:41,169 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x20ea1b194c0 at 20ec83d59d0>)
+2025-03-03 23:24:41,169 - DEBUG - Does implement IProvideClassInfo
+2025-03-03 23:24:41,178 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-03-03 23:24:41,180 - DEBUG - Release <POINTER(IUnknown) ptr=0x20ea1b19500 at 20ec83d5dd0>
+2025-03-03 23:24:41,180 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:24:41,181 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-03-03 23:24:41,181 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x20ea1b19500 at 20ec83d5d50>
+2025-03-03 23:24:41,182 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x20ea1b19520 at 20ec83d5950>
+2025-03-03 23:24:41,182 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x20ec6b30e08 at 20ec83d5a50>
+2025-03-03 23:24:41,182 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x20ec6b30e60 at 20ec83d5bd0>
+2025-03-03 23:24:41,182 - DEBUG - Release <POINTER(ITypeLib) ptr=0x20ec44bafc0 at 20ec83d5dd0>
+2025-03-03 23:24:41,182 - DEBUG - Release <POINTER(IUnknown) ptr=0x20ea1b194c0 at 20ec83d59d0>
+2025-03-03 23:24:41,182 - DEBUG - <POINTER(ISpeechVoice) ptr=0x20ea1b19500 at 20ec83d5d50> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-03-03 23:24:41,182 - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x20ea1b19520 at 20ec83d59d0>
+2025-03-03 23:24:41,182 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>: _ISpeechVoiceEvents.VoiceChange not implemented
+2025-03-03 23:24:41,182 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>: _ISpeechVoiceEvents.Bookmark not implemented
+2025-03-03 23:24:41,182 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>: _ISpeechVoiceEvents.Sentence not implemented
+2025-03-03 23:24:41,182 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>: _ISpeechVoiceEvents.Phoneme not implemented
+2025-03-03 23:24:41,182 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>: _ISpeechVoiceEvents.Viseme not implemented
+2025-03-03 23:24:41,182 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>: _ISpeechVoiceEvents.AudioLevel not implemented
+2025-03-03 23:24:41,189 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2025-03-03 23:24:41,189 - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-03-03 23:24:41,189 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2025-03-03 23:24:41,189 - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>
+2025-03-03 23:24:41,189 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>.AddRef() -> 1
+2025-03-03 23:24:41,189 - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x20ea1b19528 at 20ec83d7250>
+2025-03-03 23:24:41,242 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x20ea1b1a280 at 20ec83d7250>)
+2025-03-03 23:24:41,245 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x20ea1b1a280 at 20ec83d7250>
+2025-03-03 23:24:41,245 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x20ec86ff7b0 at 20ec83d7250>)
+2025-03-03 23:24:41,246 - DEBUG - Release <POINTER(IUnknown) ptr=0x20ec9477900 at 20ec83d71d0>
+2025-03-03 23:24:41,246 - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x20ec9479d10 at 20ec83d7450>)
+2025-03-03 23:24:41,246 - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x20ec9479d10 at 20ec83d7450>)
+2025-03-03 23:24:41,246 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-03-03 23:24:41,246 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-03-03 23:24:41,246 - DEBUG - Release <POINTER(IUnknown) ptr=0x20ec6b30f10 at 20ec83d7650>
+2025-03-03 23:24:41,248 - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2025-03-03 23:24:41,248 - DEBUG - Release <POINTER(IUnknown) ptr=0x20ec9479d10 at 20ec83d7750>
+2025-03-03 23:24:41,248 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:24:41,248 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2025-03-03 23:24:41,248 - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x20ec9479d10 at 20ec83d7650>
+2025-03-03 23:24:41,248 - DEBUG - Release <POINTER(IDispatch) ptr=0x20ec9479d10 at 20ec83d75d0>
+2025-03-03 23:24:41,248 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x20ec6b30f10 at 20ec83d76d0>
+2025-03-03 23:24:41,248 - DEBUG - Release <POINTER(ITypeLib) ptr=0x20ec44bafc0 at 20ec83d7750>
+2025-03-03 23:24:41,248 - DEBUG - Release <POINTER(IDispatch) ptr=0x20ec9479d10 at 20ec83d7450>
+2025-03-03 23:24:41,248 - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x20ec9477900 at 20ec83d72d0>
+2025-03-03 23:24:41,248 - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x20ec86ff7b0 at 20ec83d7250>
+2025-03-03 23:24:41,248 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x20ec9479d10 at 20ec83d7650>
+2025-03-03 23:24:41,252 - INFO - Starting server on http://192.168.127.91:5000
+2025-03-03 23:24:41,269 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.37.91:5000
+2025-03-03 23:24:41,270 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-03 23:24:41,271 - INFO -  * Restarting with stat
+2025-03-03 23:24:46,318 - INFO - -- BEGIN Twilio API Request --
+2025-03-03 23:24:46,318 - INFO - GET Request: https://api.twilio.com/2010-04-01/Accounts/AC9dd46c8f6ed175f28d1dfe46207110ff/IncomingPhoneNumbers.json
+2025-03-03 23:24:46,318 - INFO - Headers:
+2025-03-03 23:24:46,318 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-03-03 23:24:46,318 - INFO - Accept : application/json
+2025-03-03 23:24:46,318 - INFO - User-Agent : twilio-python/9.4.1 (Windows AMD64) Python/3.12.8
+2025-03-03 23:24:46,318 - INFO - X-Twilio-Client : python-9.4.1
+2025-03-03 23:24:46,318 - INFO - Accept-Charset : utf-8
+2025-03-03 23:24:46,318 - INFO - -- END Twilio API Request --
+2025-03-03 23:24:47,265 - INFO - Response Status Code: 401
+2025-03-03 23:24:47,265 - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '107', 'Connection': 'keep-alive', 'Date': 'Mon, 03 Mar 2025 17:54:44 GMT', 'X-Twilio-Error-Code': '20003', 'Twilio-Request-Id': 'RQ5dbf35e53b8ccc9f0b25856bf6be96ea', 'Twilio-Request-Duration': '0.012', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'WWW-Authenticate': 'Basic realm="Twilio API"', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 96a703f12eef4505875ae34d4176594c.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'MAA51-P3', 'X-Amz-Cf-Id': 'EGuUBeMSn3F_rpBm_6e2Gfkr-Q3T7p8K43VOADjfUT8luEB-K0byGQ==', 'X-Powered-By': 'AT-5000', 'X-Shenanigans': 'none', 'Vary': 'Origin'}
+2025-03-03 23:24:47,265 - ERROR - Error getting verified numbers: ('Unable to fetch page', HTTP 401 {"code":20003,"message":"Authenticate","more_info":"https://www.twilio.com/docs/errors/20003","status":401})
+2025-03-03 23:24:47,341 - INFO - YOLO model loaded successfully. Available classes: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
+2025-03-03 23:24:47,353 - DEBUG - CoInitializeEx(None, 2)
+2025-03-03 23:24:47,412 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\chann\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-03 23:24:47,413 - INFO - Using writeable comtypes cache directory: 'C:\Users\chann\AppData\Local\Programs\Python\Python312\Lib\site-packages\comtypes\gen'
+2025-03-03 23:24:47,472 - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-03-03 23:24:47,472 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-03-03 23:24:47,480 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x20c791576a0 at 20c09a95a50>)
+2025-03-03 23:24:47,482 - DEBUG - Does implement IProvideClassInfo
+2025-03-03 23:24:47,483 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-03-03 23:24:47,483 - DEBUG - Release <POINTER(IUnknown) ptr=0x20c791576e0 at 20c09a95e50>
+2025-03-03 23:24:47,483 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:24:47,483 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-03-03 23:24:47,483 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x20c791576e0 at 20c09a95dd0>
+2025-03-03 23:24:47,486 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x20c79157700 at 20c09a959d0>
+2025-03-03 23:24:47,486 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x20c081ef2f8 at 20c09a95ad0>
+2025-03-03 23:24:47,486 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x20c081ef350 at 20c09a95c50>
+2025-03-03 23:24:47,486 - DEBUG - Release <POINTER(ITypeLib) ptr=0x20c07e76730 at 20c09a95e50>
+2025-03-03 23:24:47,486 - DEBUG - Release <POINTER(IUnknown) ptr=0x20c791576a0 at 20c09a95a50>
+2025-03-03 23:24:47,486 - DEBUG - <POINTER(ISpeechVoice) ptr=0x20c791576e0 at 20c09a95dd0> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-03-03 23:24:47,488 - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x20c79157700 at 20c09a95a50>
+2025-03-03 23:24:47,489 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>: _ISpeechVoiceEvents.VoiceChange not implemented
+2025-03-03 23:24:47,489 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>: _ISpeechVoiceEvents.Bookmark not implemented
+2025-03-03 23:24:47,489 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>: _ISpeechVoiceEvents.Sentence not implemented
+2025-03-03 23:24:47,489 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>: _ISpeechVoiceEvents.Phoneme not implemented
+2025-03-03 23:24:47,489 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>: _ISpeechVoiceEvents.Viseme not implemented
+2025-03-03 23:24:47,489 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>: _ISpeechVoiceEvents.AudioLevel not implemented
+2025-03-03 23:24:47,489 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2025-03-03 23:24:47,489 - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-03-03 23:24:47,489 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2025-03-03 23:24:47,489 - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>
+2025-03-03 23:24:47,489 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020C0981AAB0>.AddRef() -> 1
+2025-03-03 23:24:47,494 - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x20c79157708 at 20c09a972d0>
+2025-03-03 23:24:47,540 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x20c79158450 at 20c09a972d0>)
+2025-03-03 23:24:47,540 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x20c79158450 at 20c09a972d0>
+2025-03-03 23:24:47,540 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x20c09d1c4b0 at 20c09a972d0>)
+2025-03-03 23:24:47,540 - DEBUG - Release <POINTER(IUnknown) ptr=0x20c0aba41d0 at 20c09a97250>
+2025-03-03 23:24:47,540 - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x20c0aba5e40 at 20c09a974d0>)
+2025-03-03 23:24:47,540 - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x20c0aba5e40 at 20c09a974d0>)
+2025-03-03 23:24:47,540 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-03-03 23:24:47,546 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-03-03 23:24:47,548 - DEBUG - Release <POINTER(IUnknown) ptr=0x20c081ef400 at 20c09a976d0>
+2025-03-03 23:24:47,548 - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2025-03-03 23:24:47,548 - DEBUG - Release <POINTER(IUnknown) ptr=0x20c0aba5e40 at 20c09a977d0>
+2025-03-03 23:24:47,548 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-03-03 23:24:47,548 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2025-03-03 23:24:47,548 - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x20c0aba5e40 at 20c09a976d0>
+2025-03-03 23:24:47,548 - DEBUG - Release <POINTER(IDispatch) ptr=0x20c0aba5e40 at 20c09a97650>
+2025-03-03 23:24:47,548 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x20c081ef400 at 20c09a97750>
+2025-03-03 23:24:47,548 - DEBUG - Release <POINTER(ITypeLib) ptr=0x20c07e76730 at 20c09a977d0>
+2025-03-03 23:24:47,548 - DEBUG - Release <POINTER(IDispatch) ptr=0x20c0aba5e40 at 20c09a974d0>
+2025-03-03 23:24:47,548 - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x20c0aba41d0 at 20c09a97350>
+2025-03-03 23:24:47,548 - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x20c09d1c4b0 at 20c09a972d0>
+2025-03-03 23:24:47,548 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x20c0aba5e40 at 20c09a976d0>
+2025-03-03 23:24:47,553 - INFO - Starting server on http://192.168.127.91:5000
+2025-03-03 23:24:47,564 - WARNING -  * Debugger is active!
+2025-03-03 23:24:47,569 - INFO -  * Debugger PIN: 443-507-888
+2025-03-03 23:31:33,577 - DEBUG - Calling CoUninitialize()
+2025-03-03 23:31:33,578 - DEBUG - CoUninitialize() done.
+2025-03-03 23:31:34,224 - DEBUG - Calling CoUninitialize()
+2025-03-03 23:31:34,225 - DEBUG - CoUninitialize() done.
+2025-03-03 23:31:34,490 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>.Release() -> 0
+2025-03-03 23:31:34,492 - DEBUG - 0 active COM objects: Removed <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x0000020EC811AA50>
+2025-03-03 23:31:34,492 - DEBUG - Remaining: []
