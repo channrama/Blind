@@ -5,9 +5,11 @@ import * as Speech from 'expo-speech';
 import { Camera } from 'expo-camera';
 import { useFocusEffect } from '@react-navigation/native';
 import axios from 'axios';
+import { getServerUrl, getApiUrl } from '../../config/api';
+import NetworkDebugger from '../../components/NetworkDebugger';
 
 const api = axios.create({
-  baseURL: 'http://192.168.127.91:5000/api'
+  baseURL: getApiUrl()
 });
 
 export default function Navigation() {
@@ -32,7 +34,7 @@ export default function Navigation() {
   const speakTimeoutRef = useRef(null);
   const speechQueueRef = useRef([]);
   const connectionCheckIntervalRef = useRef(null);
-  const SERVER_URL = 'http://192.168.127.91:5000';
+  const SERVER_URL = getServerUrl();
   const processNextInQueue = async () => {
     if (speechQueueRef.current.length > 0 && !isSpeaking) {
       const nextText = speechQueueRef.current.shift();
@@ -439,6 +441,7 @@ export default function Navigation() {
           </TouchableOpacity>
         </>
       )}
+      <NetworkDebugger />
     </SafeAreaView>
   );
 }

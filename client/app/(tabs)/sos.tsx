@@ -3,11 +3,12 @@ import { View, Text, StyleSheet, Alert, TouchableOpacity, Vibration } from 'reac
 import { Accelerometer } from 'expo-sensors';
 import * as Location from 'expo-location';
 import axios from 'axios';
+import { getServerUrl, apiConfig } from '../../config/api';
 
-// Update this to match your computer's IP address
-const SERVER_URL = 'http://192.168.127.91:5000';
+// Get server URL dynamically from configuration
+const SERVER_URL = getServerUrl();
 
-// Create axios instance with default config
+// Create axios instance with server URL (not API URL to avoid double /api)
 const api = axios.create({
   baseURL: SERVER_URL,
   timeout: 5000,
@@ -87,18 +88,26 @@ export default function SOS() {
   // Test server connection
   const testServerConnection = async () => {
     try {
-      console.log('Testing server connection...');
+      console.log('Testing server connection to:', SERVER_URL);
       const response = await api.get('/');
-      console.log('Server test response:', response.data);
+      console.log('✅ Server test successful:', response.data);
       return true;
     } catch (error) {
-      console.error('Server connection test failed:', error);
+      console.error('❌ Server connection test failed:', error);
+      console.error('Error details:', {
+        message: error.message,
+        code: error.code,
+        response: error.response?.data,
+        status: error.response?.status
+      });
+
       let errorMessage = 'Cannot connect to server. Please check:\n';
-      errorMessage += '1. Server is running\n';
+      errorMessage += '1. Server is running (python app.py)\n';
       errorMessage += '2. Phone and computer are on same network\n';
       errorMessage += '3. Server IP address is correct\n\n';
-      errorMessage += `Current server URL: ${SERVER_URL}`;
-      
+      errorMessage += `Current server URL: ${SERVER_URL}\n`;
+      errorMessage += `Error: ${error.message}`;
+
       Alert.alert(
         'Connection Error',
         errorMessage,
@@ -139,10 +148,12 @@ export default function SOS() {
 
       // Send alert
       console.log('Sending alert to server...');
+      console.log('SOS endpoint URL:', `${SERVER_URL}/api/sos/trigger`);
       const response = await api.post('/api/sos/trigger', {
         location: location || {}
       });
 
+      console.log('✅ SOS alert sent successfully!');
       console.log('Server response:', response.data);
 
       if (response.data.status === 'ok') {

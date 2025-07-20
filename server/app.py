@@ -15,6 +15,7 @@ from datetime import datetime
 import base64
 from ultralytics import YOLO
 import pyttsx3
+import socket
 
 # Configure logging
 logging.basicConfig(
@@ -29,6 +30,20 @@ logger = logging.getLogger(__name__)
 
 # Load environment variables
 load_dotenv()
+
+def get_local_ip():
+    """Get the local IP address of the machine"""
+    try:
+        # Create a socket connection to determine the local IP
+        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+            # Connect to a remote address (doesn't have to be reachable)
+            s.connect(('8.8.8.8', 80))
+            local_ip = s.getsockname()[0]
+            return local_ip
+    except Exception as e:
+        logger.error(f"Error getting local IP: {e}")
+        # Fallback to localhost
+        return '127.0.0.1'
 
 app = Flask(__name__)
 CORS(app, resources={
@@ -422,7 +437,11 @@ def after_request(response):
 
 if __name__ == '__main__':
     try:
-        logger.info("Starting server on http://192.168.127.91:5000")
-        app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
+        local_ip = get_local_ip()
+        port = 5000
+        logger.info(f"Starting server on http://{local_ip}:{port}")
+        logger.info(f"Server accessible at: http://{local_ip}:{port}")
+        logger.info("Make sure your mobile device is on the same network!")
+        app.run(host='0.0.0.0', port=port, debug=True, threaded=True)
     except Exception as e:
         logger.error(f"Error starting server: {e}")
