@@ -277,20 +277,20 @@ def index():
 def trigger_sos():
     """Handle emergency alert triggers"""
     global is_tts_enabled
-    
+
     if request.method == 'OPTIONS':
         return '', 204
 
     if not twilio_client:
-        logger.error("Twilio client not initialized")
-        return jsonify({"error": "Twilio service not available"}), 500
+        logger.error("Twilio client not initialized - check your credentials in .env file")
+        return jsonify({"error": "Twilio service not available - check credentials"}), 500
 
     try:
         data = request.get_json()
         logger.info(f"Received SOS trigger request with data: {data}")
-        
-        location = data.get('location', {})
-        
+
+        location = data.get('location') if data else None
+
         if location and location.get('latitude') and location.get('longitude'):
             lat = location['latitude']
             lon = location['longitude']
@@ -304,8 +304,11 @@ def trigger_sos():
         successful_contacts = []
         failed_contacts = []
 
-        # Try sending SMS and making calls to all verified numbers
-        for emergency_contact in verified_numbers:
+        # Filter out the Twilio phone number from emergency contacts (can't send to yourself)
+        emergency_contacts = [num for num in verified_numbers if num != TWILIO_PHONE_NUMBER]
+
+        # Try sending SMS and making calls to all emergency contacts
+        for emergency_contact in emergency_contacts:
             try:
                 # Send SMS
                 logger.info(f"Sending SMS to {emergency_contact}")
@@ -335,7 +338,7 @@ def trigger_sos():
                     from_=TWILIO_PHONE_NUMBER
                 )
                 logger.info(f"Voice call initiated successfully to {emergency_contact}: {call.sid}")
-                
+
                 successful_contacts.append({
                     "number": emergency_contact,
                     "sms_sid": sms.sid,
@@ -364,7 +367,9 @@ def trigger_sos():
 
     except Exception as e:
         logger.error(f"Error in trigger_sos: {e}")
+        traceback.print_exc()
         return jsonify({"error": str(e)}), 500
+
 
 @app.route('/api/tts/control', methods=['POST'])
 def control_tts():
