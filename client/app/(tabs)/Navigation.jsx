@@ -9,7 +9,12 @@ import { getServerUrl, getApiUrl } from '../../config/api';
 import NetworkDebugger from '../../components/NetworkDebugger';
 
 const api = axios.create({
-  baseURL: getApiUrl()
+  baseURL: getServerUrl(), // Use server URL directly, not API URL
+  timeout: 5000,
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  }
 });
 
 export default function Navigation() {
@@ -122,7 +127,7 @@ export default function Navigation() {
       Speech.stop();
       // Stop object detection by disabling TTS
       api.post('/api/tts/control', { enabled: false })
-        .catch(error => console.error('Failed to disable TTS:', error));
+        .catch(error => console.warn('Failed to disable TTS (non-critical):', error.message));
       // Clear all intervals
       if (labelCheckIntervalRef.current) {
         clearInterval(labelCheckIntervalRef.current);
@@ -223,35 +228,7 @@ export default function Navigation() {
           setIsCameraLoaded(true);
           console.log('Server connected, starting intervals');
           
-          // Start periodic label checking
-          labelInterval = setInterval(async () => {
-            if (!isSpeaking) {
-              try {
-                const response = await fetch(`${SERVER_URL}/get_labels`, {
-                  headers: {
-                    'Accept': 'application/json',
-                    'Cache-Control': 'no-cache'
-                  }
-                });
-
-                if (!response.ok) throw new Error('Failed to fetch labels');
-                
-                const data = await response.json();
-                if (data && data.labels && data.labels !== "No objects detected") {
-                  const currentTime = Date.now();
-                  if (data.labels !== lastSpokenLabelRef.current || 
-                      (currentTime - lastSpokenTime > 3000)) {
-                    await speakText(data.labels);
-                  }
-                }
-              } catch (error) {
-                console.error('Error checking labels:', error);
-                if (!isSpeaking && error.message !== lastSpokenLabelRef.current) {
-                  await speakText(`Error: ${error.message}`);
-                }
-              }
-            }
-          }, 2000);
+          // Label checking will be handled by the separate useEffect below
 
           // Start periodic connection checking
           connectionInterval = setInterval(async () => {
@@ -306,9 +283,9 @@ export default function Navigation() {
         if (data && data.cautions && data.cautions !== "All clear") {
           console.log('Processing cautions:', data.cautions);
           const currentTime = Date.now();
-          
-          if (data.cautions !== lastSpokenLabelRef.current || 
-              (currentTime - lastSpokenTime > 3000)) {
+
+          if (data.cautions !== lastSpokenLabelRef.current ||
+              (currentTime - lastSpokenTime > 5000)) { // Increased from 3000 to 5000ms
             console.log('Speaking cautions:', data.cautions);
             await speakText(data.cautions);
           } else {
@@ -327,7 +304,7 @@ export default function Navigation() {
 
     if (isCameraLoaded && isConnected && isTTSEnabled) {
       console.log('Starting label check interval');
-      labelInterval = setInterval(checkLabels, 2000);
+      labelInterval = setInterval(checkLabels, 4000); // Increased from 2000 to 4000ms
       // Initial check
       checkLabels();
     }
@@ -361,7 +338,7 @@ export default function Navigation() {
         }
         // Notify server to disable TTS
         api.post('/api/tts/control', { enabled: false })
-          .catch(error => console.error('Failed to disable TTS:', error));
+          .catch(error => console.warn('Failed to disable TTS (non-critical):', error.message));
       };
     }, [])
   );
